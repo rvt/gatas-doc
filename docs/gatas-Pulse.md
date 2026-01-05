@@ -3,7 +3,7 @@
 GA/TAS Pulse is an easy to build with standard component version that has all the capabilities of GA/TAS,
 except it only uses one Tranceiver (SX1262) instead of two. It will still send and receive all the protocols and when a specific protocol is received, it will prioritice listing to protocols it receives. With a build in charger and a battery lifetime of around 20Hours it is the ideal no worries comopanion Traffic Awareness system.
 
-<img src="/img/pulse/1.png" width="800">
+<img src="../img/pulse/1.png" width="800">
 
 > ⚠️ The case and design are under constant refinement so it can be that the case is slightly different than shown in the pictures. However, the pins and schematic will always be correct.
 
@@ -52,7 +52,7 @@ _Assorted items you might already have, or a friend has:_
 - Antistatic foam (you can use the foam your components came in)
 - 3D printer + about 30m of filament (85 grams) of PET-G or similar material that handles higher temperatures better, as this device is often found near a window in the sun.
 
-<img src="/img/pulse/2.png" width="400">
+<img src="../img/pulse/2.png" width="400">
 
 ---
 
@@ -119,8 +119,8 @@ Once confirmed aligned, solder the rest of the pins.
 
 |                                             |                                              |
 | ------------------------------------------- | -------------------------------------------- |
-| <img src="/img/pulse/3.png" width="300px">  | <img src="/img/pulse/4.png" width="300px" /> |
-| <img src="/img/pulse/13.png" width="300px"> |                                              |
+| <img src="../img/pulse/3.png" width="300px">  | <img src="../img/pulse/4.png" width="300px" /> |
+| <img src="../img/pulse/13.png" width="300px"> |                                              |
 
 ### 4.4: Inspect the Solder Joints
 
@@ -135,7 +135,7 @@ Use the small plastic with the 4 points as a support for the two terminal blocks
 
 |                                            |                                            |
 | ------------------------------------------ | ------------------------------------------ |
-| <img src="/img/pulse/5.png" width="300px"> | <img src="/img/pulse/6.png" width="300px"> |
+| <img src="../img/pulse/5.png" width="300px"> | <img src="../img/pulse/6.png" width="300px"> |
 
 ---
 
@@ -151,15 +151,15 @@ Use the small plastic with the 4 points as a support for the two terminal blocks
 
 |                                                                                                                      |                                             |
 | -------------------------------------------------------------------------------------------------------------------- | ------------------------------------------- |
-| <img src="/img/pulse/7.png" width="300px">                                                                           | <img src="/img/pulse/12.png" width="300px"> |
-| <img src="/img/pulse/8.png" width="300px"><br/><sub>Ensure both GPS and LoRaWAN module switches are set to ON.</sub> | <img src="/img/pulse/11.png" width="300px"> |
-| <img src="/img/pulse/10.png" width="300px">                                                                          | <img src="/img/pulse/9.png" width="300px">  |
+| <img src="../img/pulse/7.png" width="300px">                                                                           | <img src="../img/pulse/12.png" width="300px"> |
+| <img src="../img/pulse/8.png" width="300px"><br/><sub>Ensure both GPS and LoRaWAN module switches are set to ON.</sub> | <img src="../img/pulse/11.png" width="300px"> |
+| <img src="../img/pulse/10.png" width="300px">                                                                          | <img src="../img/pulse/9.png" width="300px">  |
 
 ### Step 6.2: Schematic
 
 Observe the schematic below carefully. It's designed so you can charge the battery while the device is on or off.
 
-<img src="/img/pulse/14.png" width="800px">  
+<img src="../img/pulse/14.png" width="800px">  
 
 ### Step 6.3: Soldering the Power Wires
 
@@ -173,7 +173,7 @@ When you did solder it, do not forget to disable *'Software Based PPS'* in the C
 
 Once GPS lock is acquired, both the led of the GPS (red) and Raspberry PICO (Green) should blink in sync. 
 
-<img src="/img/pulse/15.png" width="800px">  
+<img src="../img/pulse/15.png" width="800px">  
 
 ---
 
