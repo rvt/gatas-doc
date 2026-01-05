@@ -48,8 +48,12 @@ plugins:
 
 nav:
   - Home:
-      - Faq : FAQ.md
+      - Home : index.md
       - GA/TAS PULSE Builder's Guide: gatas-Pulse.md
+      - All Modules : All modules explained.md
+      - Faq : FAQ.md
+      - License: License.md
+
 #      - Know the framework: knowyourframework.md
   # - Browser Testing:
   #     - Create Your First Browser Test: browsertesting/index.md

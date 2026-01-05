@@ -1,7 +1,5 @@
 # GA/TAS PULSE Modules
 
-[<img src="img/Discord-Logo-Blurple.png" height="45px">](https://discord.gg/J6mXTcWndS)
-
 GA/TAS conspicuity is build around a module structure, and each module performs a specific task.
 From the web interface some moduleds can be configured, can be monitored and can be enabled or disabled.
 

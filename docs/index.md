@@ -1,7 +1,5 @@
 # GA/TAS Conspicuity Device
 
-[<img src="img/Discord-Logo-Blurple.png" width="120px">](https://discord.gg/J6mXTcWndS)
-
 > ⚠️ **Disclaimer: Use at Your Own Risk**
 >
 > GA/TAS is provided "as is," without any warranties.  
@@ -22,7 +20,7 @@ Powered by a Li-Ion battery, the device includes a PCB with a USB-C charger. The
 
 |                                              |                                         |
 | -------------------------------------------- | --------------------------------------- |
-| ![OpenScad View (Open)](img/gatas-plane.png) | ![KiCAD 3D Rendering](img/kicadpcb.jpg) |
+| ![OpenScad View (Open)](../img/gatas-plane.png) | ![KiCAD 3D Rendering](../img/kicadpcb.jpg) |
 
 The PCB measures approximately 8x9 cm.
 
@@ -32,7 +30,7 @@ The PCB measures approximately 8x9 cm.
 
 |                                 |                                     |
 | ------------------------------- | ----------------------------------- |
-| ![Plane Pulse](img/pulse/1.png) | ![Pulse materials](img/pulse/2.png) |
+| ![Plane Pulse](../img/pulse/1.png) | ![Pulse materials](../img/pulse/2.png) |
 
 [Build Instructions for GA/TAS Pulse](https://github.com/rvt/openace/wiki/gatas-Pulse)
 
@@ -75,7 +73,5 @@ Most libraries are used "as-is." Some of them have been slightly modified for pe
 ---
 
 If you require further assistance or have specific questions about the GA/TAS PULSE firmware, soldering process, or case design, please refer to the project's GitHub repository or contact the maintainers directly.
-
-[<img src="img/Discord-Logo-Blurple.png" width="60px">](https://discord.gg/J6mXTcWndS)
 
 ---
