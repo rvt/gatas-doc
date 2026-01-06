@@ -1,15 +1,6 @@
 # First Time Firmware Installation Guide
 
-[<img src="img/Discord-Logo-Blurple.png" height="45px">](https://discord.gg/J6mXTcWndS) 
-
 This guide provides step-by-step instructions for installing firmware on a Raspberry Pico using the `gatas-rpxxxx.uf2` file.
-
----
-
-> [!IMPORTANT]
-> **Disclaimer: Use at Your Own Risk**
->
-> GA/TAS is provided "as is," without any warranties. By downloading or using this device, you acknowledge that you do so at your own risk. The creators are not liable for any damages or issues resulting from its use. GA/TAS is intended for General Aviation only and should not be relied upon as the sole source of traffic or navigation information. Users are responsible for ensuring compliance with local aviation regulations.
 
 ---
 
@@ -25,7 +16,7 @@ This guide provides step-by-step instructions for installing firmware on a Raspb
 2. While holding the BOOTSEL button, **connect the Pico to your computer** using a USB cable.
 3. Release the BOOTSEL button once connected.
 
-![KiCAD 3D Rendering](img/Pico-bootsel.png)
+![PICO BootSel](../images/Pico-bootsel.png)
 
 ### 3. Access USB Mass Storage Mode
 - The Pico will appear as a **USB mass storage device** on your computer:

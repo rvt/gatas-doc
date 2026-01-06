@@ -49,7 +49,9 @@ plugins:
 nav:
   - Home:
       - Home : index.md
-      - GA/TAS PULSE Builder's Guide: gatas-Pulse.md
+      - PULSE Builder's Guide: gatas-Pulse.md
+      - First Time Firmware: Firmware-Install.md
+      - Update Firmware: Update-Firmware.md
       - All Modules : All modules explained.md
       - Faq : FAQ.md
       - License: License.md
@@ -265,7 +267,11 @@ markdown_extensions:
       pygments_lang_class: true
   - pymdownx.inlinehilite
   - pymdownx.snippets
-  - pymdownx.superfences
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
   - pymdownx.tabbed:
       alternate_style: true
   - attr_list

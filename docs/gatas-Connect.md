@@ -19,7 +19,7 @@ Aircraft can be pre-configured at home, so in the cockpit you only power up and 
 This service is free for you to use.
 
 | ![GATAS Server](img/gatasServer.png)<br>Additional traffic via gatas Connect | ![Gatas Server Selection](img/gatasServer_sel.png) <br> GA/TAS Server selecting Aircraft |
-| ---------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------- |
+|------------------------------------------------------------------------------|------------------------------------------------------------------------------------------|
 
 To have GA/TAS working, please see the setup documentation of GA/TAS first, usually this means just enable the module and pincode.
 And ensure that GA/TAS connect via your mobile phone's hotspot or when at home, uses your home network to connect to the internet.

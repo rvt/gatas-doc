@@ -1,5 +1,5 @@
 {
     "markdown.copyFiles.destination": {
-        "*": "img/${documentBaseName/(...).*/$1/}/"
+        "*": "docs/images/${documentBaseName/(...).*/$1/}/"
     }
 }

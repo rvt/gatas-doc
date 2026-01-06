@@ -14,25 +14,23 @@ The device is built around the Raspberry Pi Pico 2040 and can be configured with
 
 Powered by a Li-Ion battery, the device includes a PCB with a USB-C charger. The estimated battery life is between 4 and 6 hours, though this is subject to further testing.
 
+### Pulse Version
+
+|                                             |                                                 |
+| ------------------------------------------- | ----------------------------------------------- |
+| ![Plane Pulse](../images/gatas-Pulse/1.png) | ![Pulse materials](../images/gatas-Pulse/2.png) |
+
+[Build Instructions for GA/TAS Pulse](./gatas-Pulse.md)
+
 ---
 
 ### Full Version
 
-|                                              |                                         |
-| -------------------------------------------- | --------------------------------------- |
-| ![OpenScad View (Open)](../img/gatas-plane.png) | ![KiCAD 3D Rendering](../img/kicadpcb.jpg) |
+|                                                    |                                               |
+| -------------------------------------------------- | --------------------------------------------- |
+| ![OpenScad View (Open)](../images/gatas-plane.png) | ![KiCAD 3D Rendering](../images/kicadpcb.jpg) |
 
 The PCB measures approximately 8x9 cm.
-
----
-
-### Pulse Version
-
-|                                 |                                     |
-| ------------------------------- | ----------------------------------- |
-| ![Plane Pulse](../img/pulse/1.png) | ![Pulse materials](../img/pulse/2.png) |
-
-[Build Instructions for GA/TAS Pulse](https://github.com/rvt/openace/wiki/gatas-Pulse)
 
 ---
 
