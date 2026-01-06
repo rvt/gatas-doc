@@ -180,7 +180,7 @@ Once GPS lock is acquired, both the led of the GPS (red) and Raspberry PICO (Gre
 
 ![PPS Solder pads](../images/gatas-Pulse/15.png){width=640}
 
-![Uncheck PPS on teh L76B Module](../images/gatas-Pulse/image-13.png){width=640}
+![Uncheck PPS on the L76B Module](../images/gatas-Pulse/image-13.png){width=640}
 
 ---
 
