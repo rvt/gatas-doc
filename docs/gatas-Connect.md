@@ -1,7 +1,5 @@
 # What is GA/TAS Connect?
 
-[<img src="img/Discord-Logo-Blurple.png" height="45px">](https://discord.gg/J6mXTcWndS)
-
 > ⚠️ **Disclaimer: Use at Your Own Risk**
 >
 > GA/TAS is provided "as is," without any warranties.  
@@ -18,8 +16,8 @@ The service also allows you to select the aircraft you are flying via a simple w
 Aircraft can be pre-configured at home, so in the cockpit you only power up and fly — with minimal interaction and minimal friction.
 This service is free for you to use.
 
-| ![GATAS Server](img/gatasServer.png)<br>Additional traffic via gatas Connect | ![Gatas Server Selection](img/gatasServer_sel.png) <br> GA/TAS Server selecting Aircraft |
-|------------------------------------------------------------------------------|------------------------------------------------------------------------------------------|
+| ![Additional ADSB/MLAT Traffic](../images/gatasServer.png){width=320}<br>Additional traffic via gatas Connect | ![Aircraft Selection](../images/gatasServer_sel.png){width=320}<br> GA/TAS Server selecting Aircraft |
+| ---------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------- |
 
 To have GA/TAS working, please see the setup documentation of GA/TAS first, usually this means just enable the module and pincode.
 And ensure that GA/TAS connect via your mobile phone's hotspot or when at home, uses your home network to connect to the internet.
@@ -69,7 +67,7 @@ To switch between multiple configured aircraft, you must either:
 
 1. In the GA/TAS configuration, set a PIN code with a value between **1000** and **999999**.
 
-   [<img src="img/gatasConnectConfig.png" width="1024px">](img/gatasConnectConfig.png)
+   [<img src="../images/gatasConnectConfig.png" width="1024px">](../images/gatasConnectConfig.png)
 
 2. Open a browser and navigate to:  (url may change in future)
    <https://gatas.vantwisk.nl>

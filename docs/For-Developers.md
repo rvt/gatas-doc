@@ -1,4 +1,3 @@
-[<img src="img/Discord-Logo-Blurple.png" height="45px">](https://discord.gg/J6mXTcWndS)
 
 This guide describes how to modify the GA/TAS codebase and create a new [UF2](https://github.com/microsoft/uf2) file for flashing onto the device.
 
@@ -157,7 +156,7 @@ adapter speed 12000
 Your workspace should now contain the base and `Pico` folders.
 
 Your screen should look like this:
-![vsc-compile.png](img/vsc-compile.png)
+![vsc-compile.png](../images/vsc-compile.png){width=640}
 
 ---
 
@@ -171,14 +170,15 @@ To start a debug session:
 
 If everything is set up correctly, GDB and OpenOCD will start, flash your firmware, and begin debugging.
 
-![vsc-compile.png](img/gdbserver.png)
+![vsc-compile.png](../images/gdbserver.png){width=640}
+
 To monitor GA/TAS output via serial:
 
 ```bash
 minicom -D /dev/cu.usbmodem14102
 ```
 
-![vsc-compile.png](img/minicom.png)
+![vsc-compile.png](../images/minicom.png){width=640}
 
 Replace the device path as needed.
 

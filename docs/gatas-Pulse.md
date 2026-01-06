@@ -159,7 +159,12 @@ Use the small plastic with the 4 points as a support for the two terminal blocks
 
 Observe the schematic below carefully. It's designed so you can charge the battery while the device is on or off.
 
-<img src="../images/gatas-Pulse/14.png" width="800px">  
+![Schematic](../images/gatas-Pulse/14.png){width=800}
+
+**The yellow LED is optional, but highly recommended.**
+
+> ⚠️ This schematic is for the purpose of pin clarity. It's best and most safe to solder the wires on the soldered pins of the bottom module
+
 
 ### Step 6.3: Soldering the Power Wires
 
@@ -173,7 +178,9 @@ When you did solder it, do not forget to disable *'Software Based PPS'* in the C
 
 Once GPS lock is acquired, both the led of the GPS (red) and Raspberry PICO (Green) should blink in sync. 
 
-<img src="../images/gatas-Pulse/15.png" width="800px">  
+![PPS Solder pads](../images/gatas-Pulse/15.png){width=640}
+
+![Uncheck PPS on teh L76B Module](../images/gatas-Pulse/image-13.png){width=640}
 
 ---
 

@@ -1,6 +1,6 @@
 # GA/TAS PULSE Builder's Guide
 
-[<img src="img/Discord-Logo-Blurple.png" height="45px">](https://discord.gg/J6mXTcWndS)
+[<img src="../images/Discord-Logo-Blurple.png" height="45px">](https://discord.gg/J6mXTcWndS)
 
 This guide provides step-by-step instructions for setting up GA/TAS.
 
@@ -50,7 +50,7 @@ However, if the other device supports Bluetooth BLE, you can use that to provide
 - Enable gatasConnect module
 - Configure gatas Connect with a pincode. 
   
-<img src="img/Fir/image.png" width="640px">
+<img src="../images/Fir/image.png" width="640px">
 
 
 > [!TIP]
