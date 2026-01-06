@@ -161,7 +161,7 @@ Observe the schematic below carefully. It's designed so you can charge the batte
 
 ![Schematic](../images/gatas-Pulse/14.png){width=800}
 
-**The yellow LED is optional, but highly recommended.**
+*The yellow LED is optional, but highly recommended.*
 
 > ⚠️ This schematic is for the purpose of pin clarity. It's best and most safe to solder the wires on the soldered pins of the bottom module
 

@@ -16,9 +16,9 @@ Powered by a Li-Ion battery, the device includes a PCB with a USB-C charger. The
 
 ### Pulse Version
 
-|                                             |                                                 |
-| ------------------------------------------- | ----------------------------------------------- |
-| ![Plane Pulse](images/gatas-Pulse/1.png) | ![Pulse materials](images/gatas-Pulse/2.png) |
+|                                                     |                                                 |
+|-----------------------------------------------------| ----------------------------------------------- |
+| ![Plane Pulse](images/gatas-Pulse/1.png){width=320} | ![Pulse materials](images/gatas-Pulse/2.png){width=320} |
 
 [Build Instructions for GA/TAS Pulse](./gatas-Pulse.md)
 
@@ -28,7 +28,7 @@ Powered by a Li-Ion battery, the device includes a PCB with a USB-C charger. The
 
 |                                                    |                                               |
 | -------------------------------------------------- | --------------------------------------------- |
-| ![OpenScad View (Open)](images/gatas-plane.png) | ![KiCAD 3D Rendering](images/kicadpcb.jpg) |
+| ![OpenScad View (Open)](images/gatas-plane.png){width=320} | ![KiCAD 3D Rendering](images/kicadpcb.jpg){width=320} |
 
 The PCB measures approximately 8x9 cm.
 
