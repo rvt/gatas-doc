@@ -9,6 +9,10 @@
       
       
       
+        <link rel="prev" href="../FAQ/">
+      
+      
+        <link rel="next" href="../License/">
       
       
         
@@ -269,10 +273,12 @@
   
   
   
+    
+  
   
     
     
-      <li class="md-tabs__item">
+      <li class="md-tabs__item md-tabs__item--active">
         <a href=".." class="md-tabs__link">
           
   
@@ -340,24 +346,29 @@
       
   
   
+    
   
   
+  
     
     
     
     
-      
-      
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1" >
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1" checked>
         
           
-          <label class="md-nav__link" for="__nav_1" id="__nav_1_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_1" id="__nav_1_label" tabindex="">
             
   
   
@@ -375,7 +386,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_1">
             <span class="md-nav__icon md-icon"></span>
             
@@ -429,6 +440,34 @@
     
   
     PULSE Builder's Guide
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../gatas-Connect/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    GA/TAS Connect
   
 
     
@@ -549,6 +588,243 @@
   
 
       </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    For Developers
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    For Developers
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#getting-the-source" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Getting the Source
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#building-with-docker" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Building with Docker
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Building with Docker">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#step-1-build-the-docker-image" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 1: Build the Docker Image
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-2-build-the-firmware" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 2: Build the Firmware
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#setting-up-a-native-development-environment-macos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Setting Up a Native Development Environment (macOS)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Setting Up a Native Development Environment (macOS)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#references" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        References
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sdk-installation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        SDK Installation
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#freertos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        FreeRTOS
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#toolchain" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Toolchain
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#visual-studio-code-setup" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Visual Studio Code Setup
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#debugging-with-openocd" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Debugging with OpenOCD
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#vscode-launch-configuration" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        VSCode Launch Configuration
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#opening-the-project-in-vs-code" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Opening the Project in VS Code
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#debugging-and-monitoring" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Debugging and Monitoring
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -801,7 +1077,6 @@
 
   <h1>For Developers</h1>
 
-<p><a href="https://discord.gg/J6mXTcWndS"><img src="img/Discord-Logo-Blurple.png" height="45px"></a></p>
 <p>This guide describes how to modify the GA/TAS codebase and create a new <a href="https://github.com/microsoft/uf2">UF2</a> file for flashing onto the device.</p>
 <p>For small changes or bug fixes, using the Docker container is often the easiest method. While compilation is slower and the resulting <code>gatas.uf2</code> file must be manually copied to your Pico, this approach requires only Docker and no other toolchain setup. The Docker build chain is daily tested <a href="https://github.com/rvt/openace/actions">Github Action of GA/TAS</a></p>
 <blockquote>
@@ -911,7 +1186,7 @@ The resulting uf2 can be found in: <code>src/pico/release_build_docker/gatas.uf2
 </ol>
 <p>Your workspace should now contain the base and <code>Pico</code> folders.</p>
 <p>Your screen should look like this:
-<img alt="vsc-compile.png" src="img/vsc-compile.png" /></p>
+<img alt="vsc-compile.png" src="../images/vsc-compile.png" width="640" /></p>
 <hr />
 <h2 id="debugging-and-monitoring">Debugging and Monitoring</h2>
 <p>To start a debug session:</p>
@@ -921,11 +1196,11 @@ The resulting uf2 can be found in: <code>src/pico/release_build_docker/gatas.uf2
 <li>Click the green play icon</li>
 </ul>
 <p>If everything is set up correctly, GDB and OpenOCD will start, flash your firmware, and begin debugging.</p>
-<p><img alt="vsc-compile.png" src="img/gdbserver.png" />
-To monitor GA/TAS output via serial:</p>
+<p><img alt="vsc-compile.png" src="../images/gdbserver.png" width="640" /></p>
+<p>To monitor GA/TAS output via serial:</p>
 <div class="language-bash highlight"><pre><span></span><code><span id="__span-10-1"><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a>minicom<span class="w"> </span>-D<span class="w"> </span>/dev/cu.usbmodem14102
 </span></code></pre></div>
-<p><img alt="vsc-compile.png" src="img/minicom.png" /></p>
+<p><img alt="vsc-compile.png" src="../images/minicom.png" width="640" /></p>
 <p>Replace the device path as needed.</p>
 
 

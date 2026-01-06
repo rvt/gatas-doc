@@ -12,7 +12,7 @@
         <link rel="prev" href="..">
       
       
-        <link rel="next" href="../Firmware-Install/">
+        <link rel="next" href="../gatas-Connect/">
       
       
         
@@ -740,6 +740,34 @@
   
   
     <li class="md-nav__item">
+      <a href="../gatas-Connect/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    GA/TAS Connect
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../Firmware-Install/" class="md-nav__link">
         
   
@@ -832,6 +860,34 @@
     
   
     Faq
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../For-Developers/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    For Developers
   
 
     
@@ -1432,7 +1488,11 @@ except it only uses one Tranceiver (SX1262) instead of two. It will still send a
 </table>
 <h3 id="step-62-schematic">Step 6.2: Schematic</h3>
 <p>Observe the schematic below carefully. It's designed so you can charge the battery while the device is on or off.</p>
-<p><img src="../images/gatas-Pulse/14.png" width="800px">  </p>
+<p><img alt="Schematic" src="../images/gatas-Pulse/14.png" width="800" /></p>
+<p><strong>The yellow LED is optional, but highly recommended.</strong></p>
+<blockquote>
+<p>⚠️ This schematic is for the purpose of pin clarity. It's best and most safe to solder the wires on the soldered pins of the bottom module</p>
+</blockquote>
 <h3 id="step-63-soldering-the-power-wires">Step 6.3: Soldering the Power Wires</h3>
 <p>There are a few wires that need soldering, including the switch. Some wires might need to be extended. Ensure that each wire is soldered neatly and loosely to allow easy assembly and disassembly later. This also helps handle vibrations better.</p>
 <h3 id="step-64-optionally-solder-pps">Step 6.4: Optionally solder PPS</h3>
@@ -1440,7 +1500,8 @@ except it only uses one Tranceiver (SX1262) instead of two. It will still send a
 Be warned: it’s a tiny pad, and most people won’t want to attempt it. Honestly, it’s a mystery why Waveshare didn’t just add a little switch for this.
 When you did solder it, do not forget to disable <em>'Software Based PPS'</em> in the Configuration of the L76B GPS.</p>
 <p>Once GPS lock is acquired, both the led of the GPS (red) and Raspberry PICO (Green) should blink in sync. </p>
-<p><img src="../images/gatas-Pulse/15.png" width="800px">  </p>
+<p><img alt="PPS Solder pads" src="../images/gatas-Pulse/15.png" width="640" /></p>
+<p><img alt="Uncheck PPS on teh L76B Module" src="../images/gatas-Pulse/image-13.png" width="640" /></p>
 <hr />
 <h2 id="additional-resources">Additional Resources</h2>
 <h3 id="final-notices">Final Notices:</h3>
