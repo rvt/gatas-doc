@@ -9,6 +9,10 @@
       
       
       
+        <link rel="prev" href="../Firmware-Install/">
+      
+      
+        <link rel="next" href="../All%20modules%20explained/">
       
       
         
@@ -19,7 +23,7 @@
     
     
       
-        <title>Welcome to MkDocs - GATAS Conspicuity</title>
+        <title>Update Firmware - GATAS Conspicuity</title>
       
     
     
@@ -127,7 +131,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#welcome-to-mkdocs" class="md-skip">
+        <a href="#first-time-firmware-installation-guide" class="md-skip">
           Skip to content
         </a>
       
@@ -163,7 +167,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Welcome to MkDocs
+              Update Firmware
             
           </span>
         </div>
@@ -255,7 +259,7 @@
 
 			<li class="md-tabs__item">
 				<a href="https://discord.gg/J6mXTcWndS"><img style="margin-top: 10px;"
-						src="/img/Discord-Logo-Blurple.png" width="120px"></a>
+						src="/images/Discord-Logo-Blurple.png" width="120px"></a>
 			</li>
 
 
@@ -269,10 +273,12 @@
   
   
   
+    
+  
   
     
     
-      <li class="md-tabs__item">
+      <li class="md-tabs__item md-tabs__item--active">
         <a href=".." class="md-tabs__link">
           
   
@@ -340,24 +346,29 @@
       
   
   
+    
   
   
+  
     
     
     
     
-      
-      
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1" >
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1" checked>
         
           
-          <label class="md-nav__link" for="__nav_1" id="__nav_1_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_1" id="__nav_1_label" tabindex="">
             
   
   
@@ -375,7 +386,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_1">
             <span class="md-nav__icon md-icon"></span>
             
@@ -428,7 +439,7 @@
   <span class="md-ellipsis">
     
   
-    GA/TAS PULSE Builder's Guide
+    PULSE Builder's Guide
   
 
     
@@ -437,6 +448,203 @@
   
 
       </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Firmware-Install/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    First Time Firmware
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Update Firmware
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Update Firmware
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#step-by-step-instructions" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step-by-Step Instructions
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Step-by-Step Instructions">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-download-the-firmware-file" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Download the Firmware File
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-set-gatas-in-boot-mode-via-the-ui" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Set GA/TAS in boot mode via the UI
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-access-usb-mass-storage-mode" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Access USB Mass Storage Mode
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-flash-the-firmware" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Flash the Firmware
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5-automatic-reboot" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. Automatic Reboot
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#6-verify-installation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6. Verify Installation
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#summary-of-steps" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Summary of Steps
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -560,21 +768,93 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#commands" class="md-nav__link">
+  <a href="#step-by-step-instructions" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Commands
+        Step-by-Step Instructions
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Step-by-Step Instructions">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-download-the-firmware-file" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Download the Firmware File
       
     </span>
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#project-layout" class="md-nav__link">
+        
+          <li class="md-nav__item">
+  <a href="#2-set-gatas-in-boot-mode-via-the-ui" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Project layout
+        2. Set GA/TAS in boot mode via the UI
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-access-usb-mass-storage-mode" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Access USB Mass Storage Mode
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-flash-the-firmware" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Flash the Firmware
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5-automatic-reboot" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. Automatic Reboot
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#6-verify-installation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6. Verify Installation
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#summary-of-steps" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Summary of Steps
       
     </span>
   </a>
@@ -601,21 +881,57 @@
   
 
 
-<h1 id="welcome-to-mkdocs">Welcome to MkDocs</h1>
-<p>For full documentation visit <a href="https://www.mkdocs.org">mkdocs.org</a>.</p>
-<h2 id="commands">Commands</h2>
+<h1 id="first-time-firmware-installation-guide">First Time Firmware Installation Guide</h1>
+<p>This guide provides step-by-step instructions for installing firmware on a Raspberry Pico using the <code>gatas-rpxxxx.uf2</code> file.</p>
+<hr />
+<h2 id="step-by-step-instructions">Step-by-Step Instructions</h2>
+<h3 id="1-download-the-firmware-file">1. Download the Firmware File</h3>
 <ul>
-<li><code>mkdocs new [dir-name]</code> - Create a new project.</li>
-<li><code>mkdocs serve</code> - Start the live-reloading docs server.</li>
-<li><code>mkdocs build</code> - Build the documentation site.</li>
-<li><code>mkdocs -h</code> - Print help message and exit.</li>
+<li>Visit the <a href="https://github.com/rvt/OpenAce/releases">GA/TAS Releases page</a> to download the appropriate firmware file (<code>gatas-rpxxxx.uf2</code>).</li>
+<li>Ensure you download the correct version for your Raspberry Pico model:</li>
+<li><strong>RP2040</strong> or <strong>RP2350</strong>.</li>
 </ul>
-<h2 id="project-layout">Project layout</h2>
-<div class="language-text highlight"><pre><span></span><code>mkdocs.yml    # The configuration file.
-docs/
-    index.md  # The documentation homepage.
-    ...       # Other markdown pages, images and other files.
-</code></pre></div>
+<h3 id="2-set-gatas-in-boot-mode-via-the-ui">2. Set GA/TAS in boot mode via the UI</h3>
+<ol>
+<li>In the UI on the 'aircraft' page select the button [Update/Upload Firmware]</li>
+<li>Confirm the pop-up dialog with [YES]</li>
+</ol>
+<p><img alt="Update Firmware" src="../images/Update-Firmware/image.png" width="320" /></p>
+<h3 id="3-access-usb-mass-storage-mode">3. Access USB Mass Storage Mode</h3>
+<ul>
+<li>The Pico will appear as a <strong>USB mass storage device</strong> on your computer:</li>
+<li>On <strong>Windows</strong>, it will appear as a removable drive.</li>
+<li>On <strong>macOS</strong> and <strong>Linux</strong>, it will appear as an external drive labeled <code>RPI-RP2</code>.</li>
+</ul>
+<h3 id="4-flash-the-firmware">4. Flash the Firmware</h3>
+<ol>
+<li>Open the <code>RPI-RP2</code> drive on your computer.</li>
+<li><strong>Drag and drop</strong> or <strong>copy and paste</strong> the <code>gatas-rpxxxx.uf2</code> file into the Pico's drive.</li>
+<li>Do <strong>not</strong> attempt to open or modify the <code>.uf2</code> file.</li>
+</ol>
+<h3 id="5-automatic-reboot">5. Automatic Reboot</h3>
+<ul>
+<li>Once the file is copied, the Pico will <strong>automatically reboot</strong> and begin running the new firmware.</li>
+<li>The Pico will disappear from your list of drives, indicating the flashing process is complete.</li>
+</ul>
+<h3 id="6-verify-installation">6. Verify Installation</h3>
+<ul>
+<li>After rebooting, the Pico will start running the newly installed firmware.</li>
+<li>A <strong>green LED</strong> on the Pico will flash once per second, confirming successful installation.</li>
+</ul>
+<hr />
+<hr />
+<h2 id="summary-of-steps">Summary of Steps</h2>
+<ol>
+<li>Download the <code>gatas-rpxxxx.uf2</code> file from the <a href="https://github.com/rvt/OpenAce/releases">GA/TAS Releases page</a>.</li>
+<li>Set GA/TAS in boot mode via the UI</li>
+<li>Release the BOOTSEL button once connected.</li>
+<li>Copy the <code>gatas-rpxxxx.uf2</code> file to the Pico's mass storage drive.</li>
+<li>The Pico will reboot automatically and run the new firmware.</li>
+<li>Verify the installation by checking the green flashing LED.</li>
+</ol>
+<hr />
+<p>For additional support, join the <a href="https://discord.gg/J6mXTcWndS">GA/TAS Discord Community</a>.</p>
 
 
 

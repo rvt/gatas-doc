@@ -12,7 +12,7 @@
         <link rel="prev" href="..">
       
       
-        <link rel="next" href="../All%20modules%20explained/">
+        <link rel="next" href="../Firmware-Install/">
       
       
         
@@ -23,7 +23,7 @@
     
     
       
-        <title>GA/TAS PULSE Builder's Guide - GATAS Conspicuity</title>
+        <title>PULSE Builder's Guide - GATAS Conspicuity</title>
       
     
     
@@ -167,7 +167,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              GA/TAS PULSE Builder's Guide
+              PULSE Builder's Guide
             
           </span>
         </div>
@@ -259,7 +259,7 @@
 
 			<li class="md-tabs__item">
 				<a href="https://discord.gg/J6mXTcWndS"><img style="margin-top: 10px;"
-						src="/img/Discord-Logo-Blurple.png" width="120px"></a>
+						src="/images/Discord-Logo-Blurple.png" width="120px"></a>
 			</li>
 
 
@@ -448,7 +448,7 @@
   <span class="md-ellipsis">
     
   
-    GA/TAS PULSE Builder's Guide
+    PULSE Builder's Guide
   
 
     
@@ -466,7 +466,7 @@
   <span class="md-ellipsis">
     
   
-    GA/TAS PULSE Builder's Guide
+    PULSE Builder's Guide
   
 
     
@@ -728,6 +728,62 @@
   
 </nav>
       
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Firmware-Install/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    First Time Firmware
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Update-Firmware/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Update Firmware
+  
+
+    
+  </span>
+  
+  
+
+      </a>
     </li>
   
 
@@ -1106,14 +1162,14 @@
 <h1 id="gatas-pulse-builders-guide">GA/TAS PULSE Builder's Guide</h1>
 <p>GA/TAS Pulse is an easy to build with standard component version that has all the capabilities of GA/TAS,
 except it only uses one Tranceiver (SX1262) instead of two. It will still send and receive all the protocols and when a specific protocol is received, it will prioritice listing to protocols it receives. With a build in charger and a battery lifetime of around 20Hours it is the ideal no worries comopanion Traffic Awareness system.</p>
-<p><img src="../img/pulse/1.png" width="800"></p>
+<p><img src="../images/gatas-Pulse/1.png" width="800"></p>
 <blockquote>
 <p>⚠️ The case and design are under constant refinement so it can be that the case is slightly different than shown in the pictures. However, the pins and schematic will always be correct.</p>
 </blockquote>
 <h2 id="overview">Overview</h2>
 <p>This document provides step-by-step instructions to:</p>
 <ul>
-<li>Solder the necessary header pins onto the Pico.</li>
+<li>Solder the necessary header pins onto the Pico.  </li>
 <li>3D print and assemble a protective case for the device.</li>
 <li>Flash the GA/TAS firmware onto a Raspberryco.</li>
 <li>Final soldering of charger, battery and switch</li>
@@ -1125,90 +1181,104 @@ except it only uses one Tranceiver (SX1262) instead of two. It will still send a
 <table>
 <thead>
 <tr>
-<th>Item</th>
-<th>No Items</th>
-<th>Link</th>
-<th>Indicated Price</th>
+<th style="text-align: left;">Item</th>
+<th style="text-align: left;">No Items</th>
+<th style="text-align: left;">Link</th>
+<th style="text-align: left;">Price</th>
+<th style="text-align: left;">Image</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>RP2350 W</td>
-<td>1<br /><sub>If available, buy the version with the header peins already soldered if you feel inesure soldering this yourself.</sub></td>
-<td><a href="https://www.tinytronics.nl/nl/development-boards/microcontroller-boards/met-wi-fi/raspberry-pi-pico-2w-rp2350">TinyTronics Link</a></td>
-<td>€9.25</td>
+<td style="text-align: left;"><strong>RP2350 W</strong></td>
+<td style="text-align: left;">1<br><sub>Get headers soldered if unsure.</sub></td>
+<td style="text-align: left;"><a href="https://www.tinytronics.nl/nl/development-boards/microcontroller-boards/met-wi-fi/raspberry-pi-pico-2w-rp2350">TinyTronics</a></td>
+<td style="text-align: left;">€9.25</td>
+<td style="text-align: left;" width="100"><img alt="alt text" src="../images/gatas-Pulse/image.png" /></td>
 </tr>
 <tr>
-<td>40Pin header male</td>
-<td>1<br /> <sub>To solder on RP2350</sub></td>
-<td><a href="https://www.tinytronics.nl/nl/kabels-en-connectoren/connectoren/pin-headers/male/40-pins-header-male">TinyTronics Link</a></td>
-<td>€0.40</td>
+<td style="text-align: left;"><strong>40Pin header male</strong></td>
+<td style="text-align: left;">1<br><sub>To solder on RP2350</sub></td>
+<td style="text-align: left;"><a href="https://www.tinytronics.nl/nl/kabels-en-connectoren/connectoren/pin-headers/male/40-pins-header-male">TinyTronics</a></td>
+<td style="text-align: left;">€0.40</td>
+<td style="text-align: left;"><img alt="alt text" src="../images/gatas-Pulse/image-1.png" width="100" /></td>
 </tr>
 <tr>
-<td>Waveshare L76B GNSS Module</td>
-<td>1 <br /><sub>Includes a GPS antenna with wire</sub></td>
-<td><a href="https://www.tinytronics.nl/nl/communicatie-en-signalen/draadloos/gps/modules/waveshare-l76b-gnss-module-voor-raspberry-pi-pico">TinyTronics Link</a></td>
-<td>€16.50</td>
+<td style="text-align: left;"><strong>Waveshare L76B GPS</strong></td>
+<td style="text-align: left;">1<br><sub>Includes antenna</sub></td>
+<td style="text-align: left;"><a href="https://www.tinytronics.nl/nl/communicatie-en-signalen/draadloos/gps/modules/waveshare-l76b-gnss-module-voor-raspberry-pi-pico">TinyTronics</a></td>
+<td style="text-align: left;">€16.50</td>
+<td style="text-align: left;"><img alt="alt text" src="../images/gatas-Pulse/image-2.png" /></td>
 </tr>
 <tr>
-<td>Waveshare SX1262 LoRa</td>
-<td>1</td>
-<td><a href="https://www.tinytronics.nl/nl/communicatie-en-signalen/draadloos/lora/waveshare-sx1262-lora-node-module-voor-raspberry-pi-pico">TinyTronics Link</a></td>
-<td>€15.00</td>
+<td style="text-align: left;"><strong>Waveshare SX1262</strong></td>
+<td style="text-align: left;">1</td>
+<td style="text-align: left;"><a href="https://www.tinytronics.nl/nl/communicatie-en-signalen/draadloos/lora/waveshare-sx1262-lora-node-module-voor-raspberry-pi-pico">TinyTronics</a></td>
+<td style="text-align: left;">€15.00</td>
+<td style="text-align: left;"><img alt="alt text" src="../images/gatas-Pulse/image-3.png" /></td>
 </tr>
 <tr>
-<td>TP4056 USB-C Li-ion Charger</td>
-<td>1</td>
-<td><a href="https://www.tinytronics.nl/en/power/bms-and-chargers/li-ion-and-li-po/with-protection-circuit/tp4056-usb-c-li-ion-charger-1a-with-li-ion-protection-circuit">TinyTronics Link</a></td>
-<td>€2.50</td>
+<td style="text-align: left;"><strong>TP4056 Charger</strong></td>
+<td style="text-align: left;">1</td>
+<td style="text-align: left;"><a href="https://www.tinytronics.nl/en/power/bms-and-chargers/li-ion-and-li-po/with-protection-circuit/tp4056-usb-c-li-ion-charger-1a-with-li-ion-protection-circuit">TinyTronics</a></td>
+<td style="text-align: left;">€2.50</td>
+<td style="text-align: left;"><img alt="alt text" src="../images/gatas-Pulse/image-4.png" /></td>
 </tr>
 <tr>
-<td>186500 Battery 3350mAh</td>
-<td>1</td>
-<td><a href="https://www.tinytronics.nl/nl/power/batterijen/18650/sanyo-18650-li-ion-batterij-3350mah-10a-ncr18650ga">TinyTronics Link</a></td>
-<td>€7.00</td>
+<td style="text-align: left;"><strong>18650 Battery</strong></td>
+<td style="text-align: left;">1</td>
+<td style="text-align: left;"><a href="https://www.tinytronics.nl/nl/power/batterijen/18650/sanyo-18650-li-ion-batterij-3350mah-10a-ncr18650ga">TinyTronics</a></td>
+<td style="text-align: left;">€7.00</td>
+<td style="text-align: left;"><img alt="alt text" src="../images/gatas-Pulse/image-5.png" /></td>
 </tr>
 <tr>
-<td>186500 Battery Holder</td>
-<td>1</td>
-<td><a href="https://www.tinytronics.nl/nl/power/bms-en-laders/li-ion-en-li-po/met-protectiecircuit/tp4056-usb-c-li-ion-lader-1a-met-li-ion-protection-circuit">TinyTronics Link</a></td>
-<td>€2.50</td>
+<td style="text-align: left;"><strong>18650 Holder</strong></td>
+<td style="text-align: left;">1</td>
+<td style="text-align: left;"><a href="https://www.tinytronics.nl/nl/power/batterijhouders-en-clips/18650/1x-18650-batterijhouder-met-losse-draden-button-top">TinyTronics</a></td>
+<td style="text-align: left;">€2.50</td>
+<td style="text-align: left;"><img alt="alt text" src="../images/gatas-Pulse/image-6.png" /></td>
 </tr>
 <tr>
-<td>Small Switch</td>
-<td>1</td>
-<td><a href="https://www.tinytronics.nl/en/switches/manual-switches/toggle-switches/standard-built-in-flip-switch-mts-102">TinyTronics Link</a></td>
-<td>€0.60</td>
+<td style="text-align: left;"><strong>Switch</strong></td>
+<td style="text-align: left;">1</td>
+<td style="text-align: left;"><a href="https://www.tinytronics.nl/en/switches/manual-switches/toggle-switches/standard-built-in-flip-switch-mts-102">TinyTronics</a></td>
+<td style="text-align: left;">€0.60</td>
+<td style="text-align: left;"><img alt="alt text" src="../images/gatas-Pulse/image-7.png" /></td>
 </tr>
 <tr>
-<td>Eightwood 868MHz SMA Antenna SMA Male</td>
-<td>1</td>
-<td><a href="https://www.amazon.nl/Eightwood-Antenne-Connector-Draadloze-Homematic/dp/B072BMBXMH/ref=asc_df_B072BMBXMH">Amazon.nl Link</a></td>
-<td>€11.00</td>
+<td style="text-align: left;"><strong>SMA Antenna</strong></td>
+<td style="text-align: left;">1</td>
+<td style="text-align: left;"><a href="https://www.amazon.nl/Eightwood-Antenne-Connector-Draadloze-Homematic/dp/B072BMBXMH/ref=asc_df_B072BMBXMH">Amazon</a></td>
+<td style="text-align: left;">€11.00</td>
+<td style="text-align: left;"><img alt="alt text" src="../images/gatas-Pulse/image-8.png" /></td>
 </tr>
 <tr>
-<td>Heavy Duty 9CM Suction Cup Mount</td>
-<td>1<br /><sub>Optional</sub></td>
-<td><a href="https://www.amazon.nl/-/en/dp/B07B9V3YJD?ref=ppx_yo2ov_dt_b_fed_asin_title">Amazon.nl Link</a></td>
-<td>€11.00</td>
+<td style="text-align: left;"><strong>Suction Cup Mount</strong></td>
+<td style="text-align: left;">1<br><sub>Optional</sub></td>
+<td style="text-align: left;"><a href="https://www.amazon.nl/-/en/dp/B07B9V3YJD?ref=ppx_yo2ov_dt_b_fed_asin_title">Amazon</a></td>
+<td style="text-align: left;">€11.00</td>
+<td style="text-align: left;"><img alt="alt text" src="../images/gatas-Pulse/image-9.png" /></td>
 </tr>
 <tr>
-<td>Terminal Block 3.81mm</td>
-<td>1<br /><sub>Optionally you can directly solder</sub></td>
-<td><a href="https://www.aliexpress.com/item/1005008048030314.html">Aliexpress Link</a></td>
-<td>10pcs €2.00</td>
+<td style="text-align: left;"><strong>Terminal Block</strong></td>
+<td style="text-align: left;">1<br><sub>Optional</sub></td>
+<td style="text-align: left;"><a href="https://www.aliexpress.com/item/1005008048030314.html">Aliexpress</a></td>
+<td style="text-align: left;">€2.00</td>
+<td style="text-align: left;"><img alt=" " src="../images/gatas-Pulse/image-10.png" /></td>
 </tr>
 <tr>
-<td>GPS Antenna</td>
-<td>1<br /><sub>I am still looking for something better</sub></td>
-<td><a href="https://www.aliexpress.com/item/1005008929041250.html">Aliexpress.nl Link</a></td>
-<td>€9.00</td>
+<td style="text-align: left;"><strong>GPS Antenna</strong></td>
+<td style="text-align: left;">1<br><sub>Better alternative</sub></td>
+<td style="text-align: left;"><a href="https://www.aliexpress.com/item/1005008929041250.html">Aliexpress</a></td>
+<td style="text-align: left;">€9.00</td>
+<td style="text-align: left;"><img alt="alt text" src="../images/gatas-Pulse/image-11.png" /></td>
 </tr>
 <tr>
-<td>M2.5 bolt</td>
-<td>8</td>
-<td><a href="https://www.aliexpress.com/item/1005004174685955.html">Aliexpress.nl Link</a></td>
-<td>€4.00</td>
+<td style="text-align: left;"><strong>M2.5 Bolt</strong></td>
+<td style="text-align: left;">8</td>
+<td style="text-align: left;"><a href="https://www.aliexpress.com/item/1005004174685955.html">Aliexpress</a></td>
+<td style="text-align: left;">€4.00</td>
+<td style="text-align: left;"><img alt=" " src="../images/gatas-Pulse/image-12.png" /></td>
 </tr>
 </tbody>
 </table>
@@ -1229,7 +1299,7 @@ except it only uses one Tranceiver (SX1262) instead of two. It will still send a
 <li>Antistatic foam (you can use the foam your components came in)</li>
 <li>3D printer + about 30m of filament (85 grams) of PET-G or similar material that handles higher temperatures better, as this device is often found near a window in the sun.</li>
 </ul>
-<p><img src="../img/pulse/2.png" width="400"></p>
+<p><img src="../images/gatas-Pulse/2.png" width="400"></p>
 <hr />
 <h2 id="step-1-download-and-install-the-firmware">Step 1: Download and Install the Firmware</h2>
 <p>Use this document: <a href="../Firmware-Install/">Firmware Installation</a></p>
@@ -1295,11 +1365,11 @@ except it only uses one Tranceiver (SX1262) instead of two. It will still send a
 </thead>
 <tbody>
 <tr>
-<td><img src="../img/pulse/3.png" width="300px"></td>
-<td><img src="../img/pulse/4.png" width="300px" /></td>
+<td><img src="../images/gatas-Pulse/3.png" width="300px"></td>
+<td><img src="../images/gatas-Pulse/4.png" width="300px" /></td>
 </tr>
 <tr>
-<td><img src="../img/pulse/13.png" width="300px"></td>
+<td><img src="../images/gatas-Pulse/13.png" width="300px"></td>
 <td></td>
 </tr>
 </tbody>
@@ -1323,8 +1393,8 @@ except it only uses one Tranceiver (SX1262) instead of two. It will still send a
 </thead>
 <tbody>
 <tr>
-<td><img src="../img/pulse/5.png" width="300px"></td>
-<td><img src="../img/pulse/6.png" width="300px"></td>
+<td><img src="../images/gatas-Pulse/5.png" width="300px"></td>
+<td><img src="../images/gatas-Pulse/6.png" width="300px"></td>
 </tr>
 </tbody>
 </table>
@@ -1347,22 +1417,22 @@ except it only uses one Tranceiver (SX1262) instead of two. It will still send a
 </thead>
 <tbody>
 <tr>
-<td><img src="../img/pulse/7.png" width="300px"></td>
-<td><img src="../img/pulse/12.png" width="300px"></td>
+<td><img src="../images/gatas-Pulse/7.png" width="300px"></td>
+<td><img src="../images/gatas-Pulse/12.png" width="300px"></td>
 </tr>
 <tr>
-<td><img src="../img/pulse/8.png" width="300px"><br/><sub>Ensure both GPS and LoRaWAN module switches are set to ON.</sub></td>
-<td><img src="../img/pulse/11.png" width="300px"></td>
+<td><img src="../images/gatas-Pulse/8.png" width="300px"><br/><sub>Ensure both GPS and LoRaWAN module switches are set to ON.</sub></td>
+<td><img src="../images/gatas-Pulse/11.png" width="300px"></td>
 </tr>
 <tr>
-<td><img src="../img/pulse/10.png" width="300px"></td>
-<td><img src="../img/pulse/9.png" width="300px"></td>
+<td><img src="../images/gatas-Pulse/10.png" width="300px"></td>
+<td><img src="../images/gatas-Pulse/9.png" width="300px"></td>
 </tr>
 </tbody>
 </table>
 <h3 id="step-62-schematic">Step 6.2: Schematic</h3>
 <p>Observe the schematic below carefully. It's designed so you can charge the battery while the device is on or off.</p>
-<p><img src="../img/pulse/14.png" width="800px">  </p>
+<p><img src="../images/gatas-Pulse/14.png" width="800px">  </p>
 <h3 id="step-63-soldering-the-power-wires">Step 6.3: Soldering the Power Wires</h3>
 <p>There are a few wires that need soldering, including the switch. Some wires might need to be extended. Ensure that each wire is soldered neatly and loosely to allow easy assembly and disassembly later. This also helps handle vibrations better.</p>
 <h3 id="step-64-optionally-solder-pps">Step 6.4: Optionally solder PPS</h3>
@@ -1370,7 +1440,7 @@ except it only uses one Tranceiver (SX1262) instead of two. It will still send a
 Be warned: it’s a tiny pad, and most people won’t want to attempt it. Honestly, it’s a mystery why Waveshare didn’t just add a little switch for this.
 When you did solder it, do not forget to disable <em>'Software Based PPS'</em> in the Configuration of the L76B GPS.</p>
 <p>Once GPS lock is acquired, both the led of the GPS (red) and Raspberry PICO (Green) should blink in sync. </p>
-<p><img src="../img/pulse/15.png" width="800px">  </p>
+<p><img src="../images/gatas-Pulse/15.png" width="800px">  </p>
 <hr />
 <h2 id="additional-resources">Additional Resources</h2>
 <h3 id="final-notices">Final Notices:</h3>

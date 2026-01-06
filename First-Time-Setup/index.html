@@ -255,7 +255,7 @@
 
 			<li class="md-tabs__item">
 				<a href="https://discord.gg/J6mXTcWndS"><img style="margin-top: 10px;"
-						src="/img/Discord-Logo-Blurple.png" width="120px"></a>
+						src="/images/Discord-Logo-Blurple.png" width="120px"></a>
 			</li>
 
 
@@ -428,7 +428,63 @@
   <span class="md-ellipsis">
     
   
-    GA/TAS PULSE Builder's Guide
+    PULSE Builder's Guide
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Firmware-Install/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    First Time Firmware
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Update-Firmware/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Update Firmware
   
 
     
@@ -648,29 +704,28 @@
 </blockquote>
 <h2 id="use-case-you-want-to-receive-additional-traffic-data-via-gatas-connect-you-have-your-efb-running-on-your-phone">Use case: You want to receive additional traffic data via gatas Connect, you have your EFB running on your phone</h2>
 <h3 id="connection-diagram">Connection diagram</h3>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>flowchart TB
-</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>    GATAS --&gt;|📶 Wi-Fi| HOTSPOT
-</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>    HOTSPOT --&gt;|🌐 Cellular Data| GatasConnect
-</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>
-</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>    GATAS --&gt; |BLE| IPAD
-</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>    GATAS &lt;--&gt; |📡 868Mhz| Radio[FLARM/OGN/ADSL]
-</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>
-</span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a>
-</span><span id="__span-0-9"><a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a>    GatasConnect[GA/TAS Connect]
-</span><span id="__span-0-10"><a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a>    GatasConnect@{ shape: procs }
-</span><span id="__span-0-11"><a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a>
-</span><span id="__span-0-12"><a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a>    HOTSPOT[📱Mobile Phone Hotspot&lt;br /&gt;SkyDemon/ForeFlight/EasyVFR]
-</span><span id="__span-0-13"><a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a>    HOTSPOT@{ shape: card }
-</span><span id="__span-0-14"><a id="__codelineno-0-14" name="__codelineno-0-14" href="#__codelineno-0-14"></a>
-</span><span id="__span-0-15"><a id="__codelineno-0-15" name="__codelineno-0-15" href="#__codelineno-0-15"></a>    GATAS[🧠 GA/TAS]
-</span><span id="__span-0-16"><a id="__codelineno-0-16" name="__codelineno-0-16" href="#__codelineno-0-16"></a>    GATAS@{ shape: rounded}
-</span><span id="__span-0-17"><a id="__codelineno-0-17" name="__codelineno-0-17" href="#__codelineno-0-17"></a>
-</span><span id="__span-0-18"><a id="__codelineno-0-18" name="__codelineno-0-18" href="#__codelineno-0-18"></a>    Radio[FLARM/OGN/ADSL]
-</span><span id="__span-0-19"><a id="__codelineno-0-19" name="__codelineno-0-19" href="#__codelineno-0-19"></a>    Radio@{ shape: cloud }
-</span><span id="__span-0-20"><a id="__codelineno-0-20" name="__codelineno-0-20" href="#__codelineno-0-20"></a>
-</span><span id="__span-0-21"><a id="__codelineno-0-21" name="__codelineno-0-21" href="#__codelineno-0-21"></a>    IPAD[📱 iPad / EFB&lt;br /&gt;SkyDemon]
-</span><span id="__span-0-22"><a id="__codelineno-0-22" name="__codelineno-0-22" href="#__codelineno-0-22"></a>    IPAD@{ shape: card }
-</span></code></pre></div>
+<pre class="mermaid"><code>flowchart TB
+    GATAS --&gt;|📶 Wi-Fi| HOTSPOT
+    HOTSPOT --&gt;|🌐 Cellular Data| GatasConnect
+
+    GATAS --&gt; |BLE| IPAD
+    GATAS &lt;--&gt; |📡 868Mhz| Radio[FLARM/OGN/ADSL]
+
+
+    GatasConnect[GA/TAS Connect]
+    GatasConnect@{ shape: procs }
+
+    HOTSPOT[📱Mobile Phone Hotspot&lt;br /&gt;SkyDemon/ForeFlight/EasyVFR]
+    HOTSPOT@{ shape: card }
+
+    GATAS[🧠 GA/TAS]
+    GATAS@{ shape: rounded}
+
+    Radio[FLARM/OGN/ADSL]
+    Radio@{ shape: cloud }
+
+    IPAD[📱 iPad / EFB&lt;br /&gt;SkyDemon]
+    IPAD@{ shape: card }</code></pre>
 <blockquote>
 <p>[!IMPORTANT]
 <strong>Iphone Limitations</strong>
