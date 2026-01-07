@@ -23,7 +23,7 @@
     
     
       
-        <title>Home - GATAS Conspicuity</title>
+        <title>GA/TAS Conspicuity Device - GATAS Conspicuity</title>
       
     
     
@@ -113,6 +113,8 @@
     
       <link rel="stylesheet" href="gatas.css">
     
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
     <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
@@ -167,7 +169,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Home
+              GA/TAS Conspicuity Device
             
           </span>
         </div>
@@ -420,7 +422,7 @@
   <span class="md-ellipsis">
     
   
-    Home
+    GA/TAS Conspicuity Device
   
 
     
@@ -438,7 +440,7 @@
   <span class="md-ellipsis">
     
   
-    Home
+    GA/TAS Conspicuity Device
   
 
     
@@ -519,7 +521,7 @@
   <span class="md-ellipsis">
     
   
-    PULSE Builder's Guide
+    Pulse Builder's Guide
   
 
     
@@ -844,49 +846,34 @@
 
 
 <h1 id="gatas-conspicuity-device">GA/TAS Conspicuity Device</h1>
-<blockquote>
-<p>⚠️ <strong>Disclaimer: Use at Your Own Risk</strong></p>
-<p>GA/TAS is provided "as is," without any warranties.<br />
-By downloading or using this device, you acknowledge that you do so at your own risk.<br />
-The creators are not liable for any damages or issues resulting from its use.<br />
-GA/TAS is intended for General Aviation only and should not be relied upon as the sole source of traffic or navigation information.<br />
-Users are responsible for ensuring compliance with local aviation regulations.</p>
-</blockquote>
+<div class="admonition disclaimer">
+<p class="admonition-title">Disclaimer</p>
+<p><strong>Use at Your Own Risk</strong>    <br />
+  GA/TAS is provided "as is," without any warranties.<br />
+  By downloading or using this device, you acknowledge that you do so at your own risk.<br />
+  The creators are not liable for any damages or issues resulting from its use.<br />
+  GA/TAS is intended for General Aviation only and should not be relied upon as the sole source of traffic or navigation information.<br />
+  Users are responsible for ensuring compliance with local aviation regulations.</p>
+</div>
 <p>The GA/TAS Conspicuity device is designed for General Aviation pilots flying in areas where multiple protocols, such as OGN, Flarm, ADS-L, and FANET, are used. It can transmit and receive multiple protocols simultaneously (excluding sending ADS-B) using one or more transceiver modules. All received traffic is sent to your Electronic Flight Bag (EFB), such as SkyDemon, via the GLD90 protocol.</p>
 <p>The device is built around the Raspberry Pi Pico 2040 and can be configured with a custom PCB that supports either two transceivers or a simpler configuration with one. In both setups, it can send and receive all protocols using time-sharing technology. The device can store configurations for multiple aircraft, which can be selected through an easy-to-use web interface.</p>
 <p>Powered by a Li-Ion battery, the device includes a PCB with a USB-C charger. The estimated battery life is between 4 and 6 hours, though this is subject to further testing.</p>
 <h3 id="pulse-version">Pulse Version</h3>
-<table>
-<thead>
-<tr>
-<th></th>
-<th></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><img alt="Plane Pulse" src="images/gatas-Pulse/1.png" width="320" /></td>
-<td><img alt="Pulse materials" src="images/gatas-Pulse/2.png" width="320" /></td>
-</tr>
-</tbody>
-</table>
+<div class="grid cards">
+<ul>
+<li><img alt="Plane Pulse" src="images/gatas-Pulse/1.png" width="320" /></li>
+<li><img alt="Pulse materials" src="images/gatas-Pulse/2.png" width="320" /></li>
+</ul>
+</div>
 <p><a href="gatas-Pulse/">Build Instructions for GA/TAS Pulse</a></p>
 <hr />
 <h3 id="full-version">Full Version</h3>
-<table>
-<thead>
-<tr>
-<th></th>
-<th></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><img alt="OpenScad View (Open)" src="images/gatas-plane.png" width="320" /></td>
-<td><img alt="KiCAD 3D Rendering" src="images/kicadpcb.jpg" width="320" /></td>
-</tr>
-</tbody>
-</table>
+<div class="grid cards">
+<ul>
+<li><img alt="OpenScad View (Open)" src="images/gatas-plane.png" width="320" /></li>
+<li><img alt="kiCAD PCB View (Open)" src="images/kicadpcb.jpg" width="320" /></li>
+</ul>
+</div>
 <p>The PCB measures approximately 8x9 cm.</p>
 <hr />
 <h2 id="external-libraries-and-frameworks-used">External Libraries and Frameworks Used</h2>
@@ -915,14 +902,14 @@ Users are responsible for ensuring compliance with local aviation regulations.</
    A modern unit testing framework.<br />
 <a href="https://github.com/catchorg/Catch2">https://github.com/catchorg/Catch2</a></li>
 </ol>
-<blockquote>
-<p>⚠️ <strong>GA/TAS is an ongoing project</strong> that is continuously being developed and improved.<br />
-As a result, features, functionality, and performance may be updated or modified at any time without prior notice.<br />
-We value feedback and collaboration!<br />
-If you have any questions, suggestions, or concerns, feel free to reach out.<br />
-Your input helps us improve the project and ensure it meets the needs of the community.</p>
-</blockquote>
-<hr />
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p><strong>GA/TAS is an ongoing project</strong> that is continuously being developed and improved.<br />
+  As a result, features, functionality, and performance may be updated or modified at any time without prior notice.<br />
+  We value feedback and collaboration!<br />
+  If you have any questions, suggestions, or concerns, feel free to reach out.<br />
+  Your input helps us improve the project and ensure it meets the needs of the community.</p>
+</div>
 <p>If you require further assistance or have specific questions about the GA/TAS PULSE firmware, soldering process, or case design, please refer to the project's GitHub repository or contact the maintainers directly.</p>
 <hr />
 

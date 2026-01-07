@@ -115,6 +115,8 @@
     
       <link rel="stylesheet" href="../gatas.css">
     
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
     <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
@@ -413,7 +415,7 @@
   <span class="md-ellipsis">
     
   
-    Home
+    GA/TAS Conspicuity Device
   
 
     
@@ -441,7 +443,7 @@
   <span class="md-ellipsis">
     
   
-    PULSE Builder's Guide
+    Pulse Builder's Guide
   
 
     
@@ -796,6 +798,16 @@ This behavior is intentional. It allows time to restore your phone’s hotspot (
 <details class="question">
 <summary>My iPhone functions as a hotspot and I want to use another iPad with ForeFlight.</summary>
 <p>This is unfortunately not possible, iPhone creates a hotspot with network isolation. This means that unfortunately we cannot provide GDL90 data to another device connected to the hotspot. However, if the other software supports Bluetooth BLE, you can use that to provide NMEA data to your EFB, SkyDemon allows you to do this, ForeFlight does not.</p>
+</details>
+<details class="question">
+<summary>I use a Mobile Router, and my EFB on my IPAD does not receive GDL90 data</summary>
+<p>The most lickly reason is that your EFB is not ForeFlight. if you use EasyVFR or SkyDemon, then these EFB's don't advertise
+themselve like ForeFlight would do. That means, with ForeFLight we use the xetnded GDl90 spec, and we receive the IP of the EFB.
+With SkyDemon or EasyVFR you unfortunatly need to manually configure the IP of the EFB.
+You can do this in the gdlOverUDP module. Simply fill in the IP address if the tablet/phone your RUN the EFB on.
+You can configure up to 2 additional EFB's for GDL90 traffic.
+In the below example, I als un a EFB on IP 192.168.178.191, and GA/TAS is more than happy to send GDL90 data to that IP.
+<img alt="GDL Over UDP Configuration" src="../images/FAQ/image.png" /></p>
 </details>
 
 

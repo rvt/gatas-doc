@@ -115,6 +115,8 @@
     
       <link rel="stylesheet" href="../gatas.css">
     
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
     <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
@@ -413,7 +415,7 @@
   <span class="md-ellipsis">
     
   
-    Home
+    GA/TAS Conspicuity Device
   
 
     
@@ -441,7 +443,7 @@
   <span class="md-ellipsis">
     
   
-    PULSE Builder's Guide
+    Pulse Builder's Guide
   
 
     
@@ -735,33 +737,26 @@
 
 
 <h1 id="what-is-gatas-connect">What is GA/TAS Connect?</h1>
-<blockquote>
-<p>⚠️ <strong>Disclaimer: Use at Your Own Risk</strong></p>
-<p>GA/TAS is provided "as is," without any warranties.<br />
-By downloading or using this device, you acknowledge that you do so at your own risk.<br />
-The creators are not liable for any damages or issues resulting from its use.<br />
-GA/TAS is intended for General Aviation only and should not be relied upon as the sole source of traffic or navigation information.<br />
-Users are responsible for ensuring compliance with local aviation regulations.</p>
-</blockquote>
+<div class="admonition disclaimer">
+<p class="admonition-title">Disclaimer</p>
+<p><strong>Use at Your Own Risk</strong>    <br />
+  GA/TAS is provided "as is," without any warranties.<br />
+  By downloading or using this device, you acknowledge that you do so at your own risk.<br />
+  The creators are not liable for any damages or issues resulting from its use.<br />
+  GA/TAS is intended for General Aviation only and should not be relied upon as the sole source of traffic or navigation information.<br />
+  Users are responsible for ensuring compliance with local aviation regulations.</p>
+</div>
 <p>GA/TAS Connect is an online service that delivers additional ADS-B Out and MLAT traffic to your GA/TAS device and, in turn, to your EFB.
 Internally, it uses a compact binary protocol designed for reliability and minimal data usage, making it suitable for limited or unstable bandwidth environments.</p>
 <p>The service also allows you to select the aircraft you are flying via a simple web interface. This avoids the need for complex onboard user interfaces to change configuration. 
 Aircraft can be pre-configured at home, so in the cockpit you only power up and fly — with minimal interaction and minimal friction.
 This service is free for you to use.</p>
-<table>
-<thead>
-<tr>
-<th><img alt="Additional ADSB/MLAT Traffic" src="../images/gatasServer.png" width="320" /><br>Additional traffic via gatas Connect</th>
-<th><img alt="Aircraft Selection" src="../images/gatasServer_sel.png" width="320" /><br> GA/TAS Server selecting Aircraft</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td></td>
-<td></td>
-</tr>
-</tbody>
-</table>
+<div class="grid cards">
+<ul>
+<li><img alt="Additional ADSB/MLAT Traffic" src="../images/gatasServer.png" width="320" /><br>Additional traffic via gatas Connect</li>
+<li><img alt="Aircraft Selection" src="../images/gatasServer_sel.png" width="320" /><br> GA/TAS Server selecting Aircraft</li>
+</ul>
+</div>
 <p>To have GA/TAS working, please see the setup documentation of GA/TAS first, usually this means just enable the module and pincode.
 And ensure that GA/TAS connect via your mobile phone's hotspot or when at home, uses your home network to connect to the internet.</p>
 <p>Without any configuration, GA/TAS connect will already pull in ADSB data and send them to your aircraft, however to also change the aircraft you are flying in, if configured 

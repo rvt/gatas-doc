@@ -25,7 +25,7 @@
     
     
       
-        <title>PULSE Builder's Guide - GATAS Conspicuity</title>
+        <title>Pulse Builder's Guide - GATAS Conspicuity</title>
       
     
     
@@ -115,6 +115,8 @@
     
       <link rel="stylesheet" href="../gatas.css">
     
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
     <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
@@ -169,7 +171,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              PULSE Builder's Guide
+              Pulse Builder's Guide
             
           </span>
         </div>
@@ -413,7 +415,7 @@
   <span class="md-ellipsis">
     
   
-    Home
+    GA/TAS Conspicuity Device
   
 
     
@@ -450,7 +452,7 @@
   <span class="md-ellipsis">
     
   
-    PULSE Builder's Guide
+    Pulse Builder's Guide
   
 
     
@@ -468,7 +470,7 @@
   <span class="md-ellipsis">
     
   
-    PULSE Builder's Guide
+    Pulse Builder's Guide
   
 
     
@@ -1350,7 +1352,7 @@ except it only uses one Tranceiver (SX1262) instead of two. It will still send a
 <td style="text-align: left;">1<br><sub>Optional</sub></td>
 <td style="text-align: left;"><a href="https://www.aliexpress.com/item/1005008048030314.html">Aliexpress</a></td>
 <td style="text-align: left;">€2.00</td>
-<td style="text-align: left;"><img alt=" " src="../images/gatas-Pulse/image-10.png" /></td>
+<td style="text-align: left;"><img alt=" " src="../images/gatas-Pulse/image-10.png" width="40" /></td>
 </tr>
 <tr>
 <td style="text-align: left;"><strong>GPS Antenna</strong></td>
@@ -1364,7 +1366,7 @@ except it only uses one Tranceiver (SX1262) instead of two. It will still send a
 <td style="text-align: left;">8</td>
 <td style="text-align: left;"><a href="https://www.aliexpress.com/item/1005004174685955.html">Aliexpress</a></td>
 <td style="text-align: left;">€4.00</td>
-<td style="text-align: left;"><img alt=" " src="../images/gatas-Pulse/image-12.png" /></td>
+<td style="text-align: left;"><img alt=" " src="../images/gatas-Pulse/image-12.png" width="30" /></td>
 </tr>
 </tbody>
 </table>
@@ -1442,24 +1444,13 @@ except it only uses one Tranceiver (SX1262) instead of two. It will still send a
 <p><strong>Note:</strong> If you have a breadboard, you can use it as a rig for perfectly straight solder work.</p>
 </blockquote>
 <p>Once confirmed aligned, solder the rest of the pins.</p>
-<table>
-<thead>
-<tr>
-<th></th>
-<th></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><img alt="Header PINS" src="../images/gatas-Pulse/3.png" width="320" /></td>
-<td><img alt="90 Degree angle verivication" src="../images/gatas-Pulse/4.png" width="320" /></td>
-</tr>
-<tr>
-<td><img alt="Headers Soldered" src="../images/gatas-Pulse/13.png" width="320" /></td>
-<td></td>
-</tr>
-</tbody>
-</table>
+<div class="grid cards">
+<ul>
+<li><img alt="Header PINS" src="../images/gatas-Pulse/3.png" width="320" /></li>
+<li><img alt="90 Degree angle verivication" src="../images/gatas-Pulse/4.png" width="320" /></li>
+<li><img alt="Headers Soldered" src="../images/gatas-Pulse/13.png" width="320" /></li>
+</ul>
+</div>
 <h3 id="44-inspect-the-solder-joints">4.4: Inspect the Solder Joints</h3>
 <ul>
 <li>Ensure that each solder joint is shiny and has a volcano-like shape.</li>
@@ -1467,23 +1458,13 @@ except it only uses one Tranceiver (SX1262) instead of two. It will still send a
 </ul>
 <h3 id="45-solder-terminal-blocks-on-the-charger-board-optional-but-recommended">4.5: Solder Terminal Blocks on the Charger Board (Optional but Recommended)</h3>
 <p>Use the small plastic with the 4 points as a support for the two terminal blocks.</p>
+<div class="grid cards">
 <ul>
-<li>Ensure that each solder joint is shiny and has a volcano-like shape.</li>
+<li><img alt="Terminal Blocks" src="../images/gatas-Pulse/5.png" width="320" /></li>
+<li><img alt="Spacer for Blocks" src="../images/gatas-Pulse/6.png" width="320" /></li>
 </ul>
-<table>
-<thead>
-<tr>
-<th></th>
-<th></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><img alt="Terminal Blocks" src="../images/gatas-Pulse/5.png" width="320" /></td>
-<td><img alt="Spacer for Blocks" src="../images/gatas-Pulse/6.png" width="320" /></td>
-</tr>
-</tbody>
-</table>
+</div>
+<p>Ensure that each solder joint is shiny and has a volcano-like shape.</p>
 <hr />
 <h2 id="step-6-final-assembly-and-soldering">Step 6: Final Assembly and Soldering</h2>
 <h3 id="step-61-assemble-the-case">Step 6.1: Assemble the Case</h3>
@@ -1494,28 +1475,16 @@ except it only uses one Tranceiver (SX1262) instead of two. It will still send a
 <li>Carefully assemble the Pico + GPS + SX1262 (in that order) on top of each other. Each module clearly shows the direction of the USB connector. Ensure they are stacked correctly.</li>
 <li>Put the battery charger in place, but do not insert the battery yet.</li>
 </ol>
-<table>
-<thead>
-<tr>
-<th></th>
-<th></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><img alt="Assemble Step 1" src="../images/gatas-Pulse/7.png" width="320" /></td>
-<td><img alt="Assemble Step 2" src="../images/gatas-Pulse/12.png" width="320" /></td>
-</tr>
-<tr>
-<td><img alt="Assemble Step 3" src="../images/gatas-Pulse/8.png" width="320" /><br/><sub>Ensure both GPS and LoRaWAN module switches are set to ON.</sub></td>
-<td><img alt="Assemble Step 4" src="../images/gatas-Pulse/11.png" width="320" /></td>
-</tr>
-<tr>
-<td><img alt="Assemble Step 5" src="../images/gatas-Pulse/10.png" width="320" /></td>
-<td><img alt="Assemble Step 6" src="../images/gatas-Pulse/9.png" width="320" /></td>
-</tr>
-</tbody>
-</table>
+<div class="grid cards">
+<ul>
+<li><img alt="Assemble Step 1" src="../images/gatas-Pulse/7.png" width="320" /></li>
+<li><img alt="Assemble Step 2" src="../images/gatas-Pulse/12.png" width="320" /></li>
+<li><img alt="Assemble Step 3" src="../images/gatas-Pulse/8.png" width="320" /><br/><sub>Ensure both GPS and LoRaWAN module switches are set to ON.</sub></li>
+<li><img alt="Assemble Step 4" src="../images/gatas-Pulse/11.png" width="320" /></li>
+<li><img alt="Assemble Step 5" src="../images/gatas-Pulse/10.png" width="320" /></li>
+<li><img alt="Assemble Step 6" src="../images/gatas-Pulse/9.png" width="320" /></li>
+</ul>
+</div>
 <h3 id="step-62-schematic">Step 6.2: Schematic</h3>
 <p>Observe the schematic below carefully. It's designed so you can charge the battery while the device is on or off.</p>
 <p><img alt="Schematic" src="../images/gatas-Pulse/14.png" width="800" /></p>
