@@ -6,7 +6,8 @@ except it only uses one Tranceiver (SX1262) instead of two. It will still send a
 
 ![GA/TAS Pulse in an Aquila A210](images/gatas-Pulse/1.png){width=800}
 
-> ⚠️ The case and design are under constant refinement so it can be that the case is slightly different than shown in the pictures. However, the pins and schematic will always be correct.
+!!! info
+      The case and design are under constant refinement so it can be that the case is slightly different than shown in the pictures. However, the pins and schematic will always be correct.
 
 ## Overview
 
