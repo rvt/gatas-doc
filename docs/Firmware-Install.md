@@ -16,7 +16,7 @@ This guide provides step-by-step instructions for installing firmware on a Raspb
 2. While holding the BOOTSEL button, **connect the Pico to your computer** using a USB cable.
 3. Release the BOOTSEL button once connected.
 
-![PICO BootSel](../images/Pico-bootsel.png)
+![PICO BootSel](images/Pico-bootsel.png)
 
 ### 3. Access USB Mass Storage Mode
 - The Pico will appear as a **USB mass storage device** on your computer:

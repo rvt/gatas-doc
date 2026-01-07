@@ -1,11 +1,11 @@
 # GA/TAS PULSE Builder's Guide
 
-[<img src="../images/Discord-Logo-Blurple.png" height="45px">](https://discord.gg/J6mXTcWndS)
-
 This guide provides step-by-step instructions for setting up GA/TAS.
 
 > Note: that it would be confenient if you also have the status led connected.
 
+
+**UNDER CONSTRUCTIONS**
 
 ## Use case: You want to receive additional traffic data via gatas Connect, you have your EFB running on your phone
 
@@ -50,7 +50,7 @@ However, if the other device supports Bluetooth BLE, you can use that to provide
 - Enable gatasConnect module
 - Configure gatas Connect with a pincode. 
   
-<img src="../images/Fir/image.png" width="640px">
+![](images/Fir/image.png)
 
 
 > [!TIP]

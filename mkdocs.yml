@@ -1,4 +1,5 @@
 site_name: GATAS Conspicuity
+
 theme:
   name: material
   favicon: doc_images/favicon.ico
@@ -52,6 +53,7 @@ nav:
       - PULSE Builder's Guide: gatas-Pulse.md
       - GA/TAS Connect : gatas-Connect.md
       - First Time Firmware: Firmware-Install.md
+      - Setup Instructions: First-Time-Setup.md
       - Update Firmware: Update-Firmware.md
       - All Modules : All modules explained.md
       - Faq : FAQ.md

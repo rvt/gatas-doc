@@ -156,7 +156,7 @@ adapter speed 12000
 Your workspace should now contain the base and `Pico` folders.
 
 Your screen should look like this:
-![vsc-compile.png](../images/vsc-compile.png){width=640}
+![vsc-compile.png](images/vsc-compile.png){width=640}
 
 ---
 
@@ -170,7 +170,7 @@ To start a debug session:
 
 If everything is set up correctly, GDB and OpenOCD will start, flash your firmware, and begin debugging.
 
-![vsc-compile.png](../images/gdbserver.png){width=640}
+![vsc-compile.png](images/gdbserver.png){width=640}
 
 To monitor GA/TAS output via serial:
 
@@ -178,7 +178,7 @@ To monitor GA/TAS output via serial:
 minicom -D /dev/cu.usbmodem14102
 ```
 
-![vsc-compile.png](../images/minicom.png){width=640}
+![vsc-compile.png](images/minicom.png){width=640}
 
 Replace the device path as needed.
 

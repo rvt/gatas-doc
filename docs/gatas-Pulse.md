@@ -3,7 +3,8 @@
 GA/TAS Pulse is an easy to build with standard component version that has all the capabilities of GA/TAS,
 except it only uses one Tranceiver (SX1262) instead of two. It will still send and receive all the protocols and when a specific protocol is received, it will prioritice listing to protocols it receives. With a build in charger and a battery lifetime of around 20Hours it is the ideal no worries comopanion Traffic Awareness system.
 
-<img src="../images/gatas-Pulse/1.png" width="800">
+
+![GA/TAS Pulse in an Aquila A210](images/gatas-Pulse/1.png){width=800}
 
 > ⚠️ The case and design are under constant refinement so it can be that the case is slightly different than shown in the pictures. However, the pins and schematic will always be correct.
 
@@ -20,21 +21,21 @@ This document provides step-by-step instructions to:
 
 - **Hardware:**
 
-| Item                   | No Items                                        | Link                                                                                                                                                                       | Price  | Image                                                         |
-| :--------------------- | :---------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | :----- | :------------------------------------------------------------ |
-| **RP2350 W**           | 1<br><sub>Get headers soldered if unsure.</sub> | [TinyTronics](https://www.tinytronics.nl/nl/development-boards/microcontroller-boards/met-wi-fi/raspberry-pi-pico-2w-rp2350)                                               | €9.25  | ![alt text](../images/gatas-Pulse/image.png) { width="100" }  |
-| **40Pin header male**  | 1<br><sub>To solder on RP2350</sub>             | [TinyTronics](https://www.tinytronics.nl/nl/kabels-en-connectoren/connectoren/pin-headers/male/40-pins-header-male)                                                        | €0.40  | ![alt text](../images/gatas-Pulse/image-1.png){ width="100" } |
-| **Waveshare L76B GPS** | 1<br><sub>Includes antenna</sub>                | [TinyTronics](https://www.tinytronics.nl/nl/communicatie-en-signalen/draadloos/gps/modules/waveshare-l76b-gnss-module-voor-raspberry-pi-pico)                              | €16.50 | ![alt text](../images/gatas-Pulse/image-2.png)                |
-| **Waveshare SX1262**   | 1                                               | [TinyTronics](https://www.tinytronics.nl/nl/communicatie-en-signalen/draadloos/lora/waveshare-sx1262-lora-node-module-voor-raspberry-pi-pico)                              | €15.00 | ![alt text](../images/gatas-Pulse/image-3.png)                |
-| **TP4056 Charger**     | 1                                               | [TinyTronics](https://www.tinytronics.nl/en/power/bms-and-chargers/li-ion-and-li-po/with-protection-circuit/tp4056-usb-c-li-ion-charger-1a-with-li-ion-protection-circuit) | €2.50  | ![alt text](../images/gatas-Pulse/image-4.png)                |
-| **18650 Battery**      | 1                                               | [TinyTronics](https://www.tinytronics.nl/nl/power/batterijen/18650/sanyo-18650-li-ion-batterij-3350mah-10a-ncr18650ga)                                                     | €7.00  | ![alt text](../images/gatas-Pulse/image-5.png)                |
-| **18650 Holder**       | 1                                               | [TinyTronics](https://www.tinytronics.nl/nl/power/batterijhouders-en-clips/18650/1x-18650-batterijhouder-met-losse-draden-button-top)                                      | €2.50  | ![alt text](../images/gatas-Pulse/image-6.png)                |
-| **Switch**             | 1                                               | [TinyTronics](https://www.tinytronics.nl/en/switches/manual-switches/toggle-switches/standard-built-in-flip-switch-mts-102)                                                | €0.60  | ![alt text](../images/gatas-Pulse/image-7.png)                |
-| **SMA Antenna**        | 1                                               | [Amazon](https://www.amazon.nl/Eightwood-Antenne-Connector-Draadloze-Homematic/dp/B072BMBXMH/ref=asc_df_B072BMBXMH)                                                        | €11.00 | ![alt text](../images/gatas-Pulse/image-8.png)                |
-| **Suction Cup Mount**  | 1<br><sub>Optional</sub>                        | [Amazon](https://www.amazon.nl/-/en/dp/B07B9V3YJD?ref=ppx_yo2ov_dt_b_fed_asin_title)                                                                                       | €11.00 | ![alt text](../images/gatas-Pulse/image-9.png)                |
-| **Terminal Block**     | 1<br><sub>Optional</sub>                        | [Aliexpress](https://www.aliexpress.com/item/1005008048030314.html)                                                                                                        | €2.00  | ![ ](../images/gatas-Pulse/image-10.png)                      |
-| **GPS Antenna**        | 1<br><sub>Better alternative</sub>              | [Aliexpress](https://www.aliexpress.com/item/1005008929041250.html)                                                                                                        | €9.00  | ![alt text](../images/gatas-Pulse/image-11.png)               |
-| **M2.5 Bolt**          | 8                                               | [Aliexpress](https://www.aliexpress.com/item/1005004174685955.html)                                                                                                        | €4.00  | ![ ](../images/gatas-Pulse/image-12.png)                      |
+| Item                   | No Items                                        | Link                                                                                                                                                                       | Price  | Image                                                      |
+| :--------------------- | :---------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | :----- | :--------------------------------------------------------- |
+| **RP2350 W**           | 1<br><sub>Get headers soldered if unsure.</sub> | [TinyTronics](https://www.tinytronics.nl/nl/development-boards/microcontroller-boards/met-wi-fi/raspberry-pi-pico-2w-rp2350)                                               | €9.25  | ![alt text](images/gatas-Pulse/image.png) { width="100" }  |
+| **40Pin header male**  | 1<br><sub>To solder on RP2350</sub>             | [TinyTronics](https://www.tinytronics.nl/nl/kabels-en-connectoren/connectoren/pin-headers/male/40-pins-header-male)                                                        | €0.40  | ![alt text](images/gatas-Pulse/image-1.png){ width="100" } |
+| **Waveshare L76B GPS** | 1<br><sub>Includes antenna</sub>                | [TinyTronics](https://www.tinytronics.nl/nl/communicatie-en-signalen/draadloos/gps/modules/waveshare-l76b-gnss-module-voor-raspberry-pi-pico)                              | €16.50 | ![alt text](images/gatas-Pulse/image-2.png)                |
+| **Waveshare SX1262**   | 1                                               | [TinyTronics](https://www.tinytronics.nl/nl/communicatie-en-signalen/draadloos/lora/waveshare-sx1262-lora-node-module-voor-raspberry-pi-pico)                              | €15.00 | ![alt text](images/gatas-Pulse/image-3.png)                |
+| **TP4056 Charger**     | 1                                               | [TinyTronics](https://www.tinytronics.nl/en/power/bms-and-chargers/li-ion-and-li-po/with-protection-circuit/tp4056-usb-c-li-ion-charger-1a-with-li-ion-protection-circuit) | €2.50  | ![alt text](images/gatas-Pulse/image-4.png)                |
+| **18650 Battery**      | 1                                               | [TinyTronics](https://www.tinytronics.nl/nl/power/batterijen/18650/sanyo-18650-li-ion-batterij-3350mah-10a-ncr18650ga)                                                     | €7.00  | ![alt text](images/gatas-Pulse/image-5.png)                |
+| **18650 Holder**       | 1                                               | [TinyTronics](https://www.tinytronics.nl/nl/power/batterijhouders-en-clips/18650/1x-18650-batterijhouder-met-losse-draden-button-top)                                      | €2.50  | ![alt text](images/gatas-Pulse/image-6.png)                |
+| **Switch**             | 1                                               | [TinyTronics](https://www.tinytronics.nl/en/switches/manual-switches/toggle-switches/standard-built-in-flip-switch-mts-102)                                                | €0.60  | ![alt text](images/gatas-Pulse/image-7.png)                |
+| **SMA Antenna**        | 1                                               | [Amazon](https://www.amazon.nl/Eightwood-Antenne-Connector-Draadloze-Homematic/dp/B072BMBXMH/ref=asc_df_B072BMBXMH)                                                        | €11.00 | ![alt text](images/gatas-Pulse/image-8.png)                |
+| **Suction Cup Mount**  | 1<br><sub>Optional</sub>                        | [Amazon](https://www.amazon.nl/-/en/dp/B07B9V3YJD?ref=ppx_yo2ov_dt_b_fed_asin_title)                                                                                       | €11.00 | ![alt text](images/gatas-Pulse/image-9.png)                |
+| **Terminal Block**     | 1<br><sub>Optional</sub>                        | [Aliexpress](https://www.aliexpress.com/item/1005008048030314.html)                                                                                                        | €2.00  | ![ ](images/gatas-Pulse/image-10.png)                      |
+| **GPS Antenna**        | 1<br><sub>Better alternative</sub>              | [Aliexpress](https://www.aliexpress.com/item/1005008929041250.html)                                                                                                        | €9.00  | ![alt text](images/gatas-Pulse/image-11.png)               |
+| **M2.5 Bolt**          | 8                                               | [Aliexpress](https://www.aliexpress.com/item/1005004174685955.html)                                                                                                        | €4.00  | ![ ](images/gatas-Pulse/image-12.png)                      |
 
 > ⚠️ If you still have an RP2040 with Wi-Fi laying around, feel free to use that. There is nothing on the RP2350 that is strictly required as of now. You can always swap the RP2040 with an RP2350 later if needed.
 
@@ -52,7 +53,7 @@ _Assorted items you might already have, or a friend has:_
 - Antistatic foam (you can use the foam your components came in)
 - 3D printer + about 30m of filament (85 grams) of PET-G or similar material that handles higher temperatures better, as this device is often found near a window in the sun.
 
-<img src="../images/gatas-Pulse/2.png" width="400">
+![All Components](images/gatas-Pulse/2.png){width=640}
 
 ---
 
@@ -117,10 +118,10 @@ I don't have a breadboard, but my way of working is to cut the number of pins an
 
 Once confirmed aligned, solder the rest of the pins.
 
-|                                                        |                                                         |
-| ------------------------------------------------------ | ------------------------------------------------------- |
-| <img src="../images/gatas-Pulse/3.png" width="300px">  | <img src="../images/gatas-Pulse/4.png" width="300px" /> |
-| <img src="../images/gatas-Pulse/13.png" width="300px"> |                                                         |
+|                                                           |                                                                      |
+| --------------------------------------------------------- | -------------------------------------------------------------------- |
+| ![Header PINS](images/gatas-Pulse/3.png){width=320}       | ![90 Degree angle verivication](images/gatas-Pulse/4.png){width=320} |
+| ![Headers Soldered](images/gatas-Pulse/13.png){width=320} |                                                                      |
 
 ### 4.4: Inspect the Solder Joints
 
@@ -133,9 +134,9 @@ Use the small plastic with the 4 points as a support for the two terminal blocks
 
 - Ensure that each solder joint is shiny and has a volcano-like shape.
 
-|                                                       |                                                       |
-| ----------------------------------------------------- | ----------------------------------------------------- |
-| <img src="../images/gatas-Pulse/5.png" width="300px"> | <img src="../images/gatas-Pulse/6.png" width="300px"> |
+|                                                         |                                                           |
+| ------------------------------------------------------- | --------------------------------------------------------- |
+| ![Terminal Blocks](images/gatas-Pulse/5.png){width=320} | ![Spacer for Blocks](images/gatas-Pulse/6.png){width=320} |
 
 ---
 
@@ -149,17 +150,17 @@ Use the small plastic with the 4 points as a support for the two terminal blocks
 4. Carefully assemble the Pico + GPS + SX1262 (in that order) on top of each other. Each module clearly shows the direction of the USB connector. Ensure they are stacked correctly.
 5. Put the battery charger in place, but do not insert the battery yet.
 
-|                                                                                                                                 |                                                        |
-| ------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------ |
-| <img src="../images/gatas-Pulse/7.png" width="300px">                                                                           | <img src="../images/gatas-Pulse/12.png" width="300px"> |
-| <img src="../images/gatas-Pulse/8.png" width="300px"><br/><sub>Ensure both GPS and LoRaWAN module switches are set to ON.</sub> | <img src="../images/gatas-Pulse/11.png" width="300px"> |
-| <img src="../images/gatas-Pulse/10.png" width="300px">                                                                          | <img src="../images/gatas-Pulse/9.png" width="300px">  |
+|                                                                                                                                   |                                                     |
+| --------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------- |
+| ![Assemble Step 1](images/gatas-Pulse/7.png){width=320}                                                                           | ![Assemble Step 2](images/gatas-Pulse/12.png){width=320}    |
+| ![Assemble Step 3](images/gatas-Pulse/8.png){width=320}<br/><sub>Ensure both GPS and LoRaWAN module switches are set to ON.</sub> | ![Assemble Step 4](images/gatas-Pulse/11.png){width=320}    |
+| ![Assemble Step 5](images/gatas-Pulse/10.png){width=320}                                                                          | ![Assemble Step 6](images/gatas-Pulse/9.png){width=320}    |
 
 ### Step 6.2: Schematic
 
 Observe the schematic below carefully. It's designed so you can charge the battery while the device is on or off.
 
-![Schematic](../images/gatas-Pulse/14.png){width=800}
+![Schematic](images/gatas-Pulse/14.png){width=800}
 
 *The yellow LED is optional, but highly recommended.*
 
@@ -178,9 +179,9 @@ When you did solder it, do not forget to disable *'Software Based PPS'* in the C
 
 Once GPS lock is acquired, both the led of the GPS (red) and Raspberry PICO (Green) should blink in sync. 
 
-![PPS Solder pads](../images/gatas-Pulse/15.png){width=640}
+![PPS Solder pads](images/gatas-Pulse/15.png){width=640}
 
-![Uncheck PPS on the L76B Module](../images/gatas-Pulse/image-13.png){width=640}
+![Uncheck PPS on the L76B Module](images/gatas-Pulse/image-13.png){width=640}
 
 ---
 

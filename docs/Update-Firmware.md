@@ -37,8 +37,6 @@ This guide provides step-by-step instructions for installing firmware on a Raspb
 
 ---
 
----
-
 ## Summary of Steps
 1. Download the `gatas-rpxxxx.uf2` file from the [GA/TAS Releases page](https://github.com/rvt/OpenAce/releases).
 2. Set GA/TAS in boot mode via the UI
