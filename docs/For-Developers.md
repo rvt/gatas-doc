@@ -3,7 +3,8 @@ This guide describes how to modify the GA/TAS codebase and create a new [UF2](ht
 
 For small changes or bug fixes, using the Docker container is often the easiest method. While compilation is slower and the resulting `gatas.uf2` file must be manually copied to your Pico, this approach requires only Docker and no other toolchain setup. The Docker build chain is daily tested [Github Action of GA/TAS](https://github.com/rvt/openace/actions)
 
-> 🚨 Regardless of your build method, you must have the source repository cloned locally.
+!!! warning
+    Regardless of your build method, you must have the source repository cloned locally.
 
 ---
 

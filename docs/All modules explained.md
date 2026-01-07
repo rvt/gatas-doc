@@ -25,8 +25,8 @@ The following modules can stay disabled unless you really need them, when you ne
 * Bmp280
 * Dump1090Client
 
-> ⚠️
-> The below information is provided for to help you understand how the system works, it is not required to know the below by heart, in the Setup Up instructions it's explained what you have to do. Don't be alarmed, I kept this at a minimal.
+!!! info
+    The below information is provided for to help you understand how the system works, it is not required to know the below by heart, in the Setup Up instructions it's explained what you have to do. Don't be alarmed, I kept this at a minimal.
   
 ## Modules
 

@@ -1,12 +1,12 @@
 # What is GA/TAS Connect?
 
-> ⚠️ **Disclaimer: Use at Your Own Risk**
->
-> GA/TAS is provided "as is," without any warranties.  
-> By downloading or using this device, you acknowledge that you do so at your own risk.  
-> The creators are not liable for any damages or issues resulting from its use.  
-> GA/TAS is intended for General Aviation only and should not be relied upon as the sole source of traffic or navigation information.  
-> Users are responsible for ensuring compliance with local aviation regulations.
+!!! Disclaimer
+      **Use at Your Own Risk**      
+      GA/TAS is provided "as is," without any warranties.  
+      By downloading or using this device, you acknowledge that you do so at your own risk.  
+      The creators are not liable for any damages or issues resulting from its use.  
+      GA/TAS is intended for General Aviation only and should not be relied upon as the sole source of traffic or navigation information.  
+      Users are responsible for ensuring compliance with local aviation regulations.
 
 
 GA/TAS Connect is an online service that delivers additional ADS-B Out and MLAT traffic to your GA/TAS device and, in turn, to your EFB.
@@ -16,8 +16,11 @@ The service also allows you to select the aircraft you are flying via a simple w
 Aircraft can be pre-configured at home, so in the cockpit you only power up and fly — with minimal interaction and minimal friction.
 This service is free for you to use.
 
-| ![Additional ADSB/MLAT Traffic](images/gatasServer.png){width=320}<br>Additional traffic via gatas Connect | ![Aircraft Selection](images/gatasServer_sel.png){width=320}<br> GA/TAS Server selecting Aircraft |
-| ---------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------- |
+<div class="grid cards" markdown>
+ - ![Additional ADSB/MLAT Traffic](images/gatasServer.png){width=320}<br>Additional traffic via gatas Connect
+ - ![Aircraft Selection](images/gatasServer_sel.png){width=320}<br> GA/TAS Server selecting Aircraft
+</div>
+
 
 To have GA/TAS working, please see the setup documentation of GA/TAS first, usually this means just enable the module and pincode.
 And ensure that GA/TAS connect via your mobile phone's hotspot or when at home, uses your home network to connect to the internet.

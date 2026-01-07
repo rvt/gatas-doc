@@ -52,3 +52,12 @@
 ??? question "My iPhone functions as a hotspot and I want to use another iPad with ForeFlight."
     This is unfortunately not possible, iPhone creates a hotspot with network isolation. This means that unfortunately we cannot provide GDL90 data to another device connected to the hotspot. However, if the other software supports Bluetooth BLE, you can use that to provide NMEA data to your EFB, SkyDemon allows you to do this, ForeFlight does not.
 
+??? question "I use a Mobile Router, and my EFB on my IPAD does not receive GDL90 data"
+    The most lickly reason is that your EFB is not ForeFlight. if you use EasyVFR or SkyDemon, then these EFB's don't advertise
+    themselve like ForeFlight would do. That means, with ForeFLight we use the xetnded GDl90 spec, and we receive the IP of the EFB.
+    With SkyDemon or EasyVFR you unfortunatly need to manually configure the IP of the EFB.
+    You can do this in the gdlOverUDP module. Simply fill in the IP address if the tablet/phone your RUN the EFB on.
+    You can configure up to 2 additional EFB's for GDL90 traffic.
+    In the below example, I als un a EFB on IP 192.168.178.191, and GA/TAS is more than happy to send GDL90 data to that IP.
+    ![GDL Over UDP Configuration](images/FAQ/image.png)
+    

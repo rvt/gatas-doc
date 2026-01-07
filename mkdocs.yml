@@ -46,11 +46,12 @@ theme:
 
 plugins:
   - search
+  - macros
 
 nav:
-  - Home:
-      - Home: index.md
-      - PULSE Builder's Guide: gatas-Pulse.md
+  - Home: 
+      - index.md
+      - Pulse Builder's Guide: gatas-Pulse.md
       - GA/TAS Connect: gatas-Connect.md
       - First Time Firmware: Firmware-Install.md
       - Setup Instructions: First-Time-Setup.md
@@ -231,12 +232,14 @@ nav:
   #     - Troubleshooting: troubleshooting.md
 
 extra:
+  generator: false
   footer:
     - text: |
         hellooooooooo
 
 extra_css:
   - gatas.css
+  - https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css
 
 extra_javascript:
   - js/sidebar_logo.js
@@ -256,9 +259,6 @@ copyright: Created and maintained by ING INGenious Team
 #   - content.code.copy
 #   - content.footnote.tooltips
 #   - content.action.edit
-
-extra:
-  generator: false
 
 markdown_extensions:
   - admonition
@@ -291,5 +291,6 @@ markdown_extensions:
   - pymdownx.tilde
   - pymdownx.tasklist:
       custom_checkbox: true
+
 
 repo_url: https://github.com/rvt/gatas-doc

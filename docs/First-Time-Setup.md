@@ -2,15 +2,10 @@
 
 This guide provides step-by-step instructions for setting up GA/TAS.
 
-> Note: that it would be confenient if you also have the status led connected.
+!!! Tip
+    It's highly recommended to also have the status Led connected, it will give you instal feedback on some of the basic state of GA/TAS.
 
-
-**UNDER CONSTRUCTIONS**
-
-## Use case: You want to receive additional traffic data via gatas Connect, you have your EFB running on your phone
-
-
-### Connection diagram
+## Use case 1: You want to receive additional traffic data via gatas Connect, you have your EFB running on your phone
 
 
 ```mermaid
@@ -19,56 +14,98 @@ flowchart TB
     HOTSPOT -->|🌐 Cellular Data| GatasConnect
 
     GATAS --> |BLE| IPAD
-    GATAS <--> |📡 868Mhz| Radio[FLARM/OGN/ADSL]
+    GATAS <--> |📡 868Mhz| Radio[fa:fa-tower-broadcast FLARM/OGN/ADSL ]
 
 
-    GatasConnect[GA/TAS Connect]
+    GatasConnect[fa:fa-server GA/TAS Connect]
     GatasConnect@{ shape: procs }
 
-    HOTSPOT[📱Mobile Phone Hotspot<br />SkyDemon/ForeFlight/EasyVFR]
-    HOTSPOT@{ shape: card }
-
-    GATAS[🧠 GA/TAS]
+    GATAS[fa:fa-microchip GA/TAS]
     GATAS@{ shape: rounded}
 
-    Radio[FLARM/OGN/ADSL]
+    Radio[fa:fa-tower-broadcast FLARM/OGN/ADSL]
     Radio@{ shape: cloud }
-
-    IPAD[📱 iPad / EFB<br />SkyDemon]
+    IPAD[fa:fa-tablet-screen-button iPad / EFB<br />SkyDemon ]
     IPAD@{ shape: card }
 ```
 
-> [!IMPORTANT]
-> **Iphone Limitations**
-> IPhones use connection isolation when used as a hotspot this means that unfortunately we cannot provide GDL90 data to an other device connected to the hotspot.
-However, if the other device supports Bluetooth BLE, you can use that to provide NMEA data to your EFB, SkyDemon allows you to do this.
-
-
 ### Setup
 
-- In GA/TAS under WIFI Service add your mobile phone's hotspot under *Client Configuration*.
-- Enable gatasConnect module
-- Configure gatas Connect with a pincode. 
-  
-![](images/Fir/image.png)
+1) In GA/TAS under WIFI Service add your mobile phone's hotspot under *Client Configuration*.
+
+![WIFI Configuration](images/First-Time-Setup/image-2.png)
+
+!!! TIP
+    In Additional to my phone's hotspot I also add my WIFI Network at home so I can configure GA/TAS on my webbrowser on my computer. Since GA/TAS will try connnect to any available network in the list. Once a connect drops, it will try other networks seemlessly. When I just drive away from home, it will connect to my hotspot.
+
+2) Enable gatasConnect module
+
+![alt text](images/First-Time-Setup/image-1.png)
+
+3) Configure gatas Connect with a pincode. 
+![alt text](images/First-Time-Setup/image.png)
+
+!!! note
+    **Iphone Limitations**
+    IPhones use connection isolation when used as a hotspot this means that unfortunately we cannot provide GDL90 data to an other device connected to the hotspot.
+    However, if the other device supports Bluetooth BLE, you can use that to provide NMEA data to your EFB, SkyDemon allows you to do this.
 
 
-> [!TIP]
-In Additional to my phone's hotspot I also add ny hotspot at home so I can configure GA/TAS on my webbrowser of my computer. GA/TAS will try connnect to any available network in the list.
-Once a connect drops, it will try other networks seemlessly.
+## Use case 2: GA/TAS used as hotspot, mobile phone connects to GA/TAS
 
+```mermaid
+flowchart TB
+    HOTSPOT --> |📶 Wi-Fi| GATAS
 
-## Use case: GA/TAS used as hotspot, mobile phone connects to GA/TAS
+    IPAD --> |WIFI| GATAS
+    GATAS <--> |📡 868Mhz| Radio[fa:fa-tower-broadcast FLARM/OGN/ADSL ]
 
-Connections:
- - DL90
- - BlueTooth
- - AirConnect
+    HOTSPOT[fa:fa-mobile-screen-button Mobile Phone Hotspot<br />SkyDemon/ForeFlight/EasyVFR]
+    HOTSPOT@{ shape: card}
 
+    GATAS[fa:fa-microchip GA/TAS]
+    GATAS@{ shape: rounded}
 
-## Use case: Mobile router used as hotspot, GA/TAS connects to hotspot, Mobile Phone connects to hotspot.
+    Radio[fa:fa-tower-broadcast FLARM/OGN/ADSL]
+    Radio@{ shape: cloud }
+    IPAD[fa:fa-tablet-screen-button iPad / EFB<br />SkyDemon/ForeFlight/EasyVFR ]
+    IPAD@{ shape: card }
+```
 
-Connections:
- - GDL90
- - BlueTooth
+1) Keep the GATAS Access Point with default SSID or configure a new name and password.
 
+![GATAS In Access Point Mode](images/First-Time-Setup/image-3.png)
+
+!!! warning
+    **No Internet ADS-B**
+    In this situation GA/TAS will not provide any internet traffic data for MLAT and ADSB-OUT
+
+## Use case 3: Mobile router used as hotspot, GA/TAS connects to hotspot, Mobile Phone connects to hotspot.
+
+```mermaid
+flowchart TD
+    MobileRouter --> GatasConnect
+    GATAS <-->|📶 Wi-Fi| MobileRouter
+    PHONE -->|🌐 Cellular Data| MobileRouter
+
+    IPAD --> |BLE| GATAS
+    IPAD2 --> |WIFI| MobileRouter
+    GATAS <--> |📡 868Mhz| Radio[fa:fa-tower-broadcast FLARM/OGN/ADSL ]
+
+    MobileRouter@{ shape: card}
+
+    PHONE[fa:fa-mobile-screen-button Phone<br />SkyDemon/ForeFlight/EasyVFR]
+    PHONE@{ shape: card}
+
+    GATAS[fa:fa-microchip GA/TAS]
+    GATAS@{ shape: rounded}
+
+    Radio[fa:fa-tower-broadcast FLARM/OGN/ADSL]
+    Radio@{ shape: cloud }
+    IPAD[fa:fa-tablet-screen-button iPad<br />EFB<br />SkyDemon ]
+    IPAD@{ shape: card }
+    IPAD2[fa:fa-tablet-screen-button iPad<br />EFB<br />SkyDemon ]
+    IPAD2@{ shape: card }
+```
+
+Setup is exactly as in **Use case 1**

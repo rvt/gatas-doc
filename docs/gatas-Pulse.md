@@ -33,9 +33,9 @@ This document provides step-by-step instructions to:
 | **Switch**             | 1                                               | [TinyTronics](https://www.tinytronics.nl/en/switches/manual-switches/toggle-switches/standard-built-in-flip-switch-mts-102)                                                | €0.60  | ![alt text](images/gatas-Pulse/image-7.png)                |
 | **SMA Antenna**        | 1                                               | [Amazon](https://www.amazon.nl/Eightwood-Antenne-Connector-Draadloze-Homematic/dp/B072BMBXMH/ref=asc_df_B072BMBXMH)                                                        | €11.00 | ![alt text](images/gatas-Pulse/image-8.png)                |
 | **Suction Cup Mount**  | 1<br><sub>Optional</sub>                        | [Amazon](https://www.amazon.nl/-/en/dp/B07B9V3YJD?ref=ppx_yo2ov_dt_b_fed_asin_title)                                                                                       | €11.00 | ![alt text](images/gatas-Pulse/image-9.png)                |
-| **Terminal Block**     | 1<br><sub>Optional</sub>                        | [Aliexpress](https://www.aliexpress.com/item/1005008048030314.html)                                                                                                        | €2.00  | ![ ](images/gatas-Pulse/image-10.png)                      |
+| **Terminal Block**     | 1<br><sub>Optional</sub>                        | [Aliexpress](https://www.aliexpress.com/item/1005008048030314.html)                                                                                                        | €2.00  | ![ ](images/gatas-Pulse/image-10.png){width=40}                     |
 | **GPS Antenna**        | 1<br><sub>Better alternative</sub>              | [Aliexpress](https://www.aliexpress.com/item/1005008929041250.html)                                                                                                        | €9.00  | ![alt text](images/gatas-Pulse/image-11.png)               |
-| **M2.5 Bolt**          | 8                                               | [Aliexpress](https://www.aliexpress.com/item/1005004174685955.html)                                                                                                        | €4.00  | ![ ](images/gatas-Pulse/image-12.png)                      |
+| **M2.5 Bolt**          | 8                                               | [Aliexpress](https://www.aliexpress.com/item/1005004174685955.html)                                                                                                        | €4.00  | ![ ](images/gatas-Pulse/image-12.png){width=30}                      |
 
 > ⚠️ If you still have an RP2040 with Wi-Fi laying around, feel free to use that. There is nothing on the RP2350 that is strictly required as of now. You can always swap the RP2040 with an RP2350 later if needed.
 
@@ -118,10 +118,11 @@ I don't have a breadboard, but my way of working is to cut the number of pins an
 
 Once confirmed aligned, solder the rest of the pins.
 
-|                                                           |                                                                      |
-| --------------------------------------------------------- | -------------------------------------------------------------------- |
-| ![Header PINS](images/gatas-Pulse/3.png){width=320}       | ![90 Degree angle verivication](images/gatas-Pulse/4.png){width=320} |
-| ![Headers Soldered](images/gatas-Pulse/13.png){width=320} |                                                                      |
+<div class="grid cards" markdown>
+- ![Header PINS](images/gatas-Pulse/3.png){width=320}
+- ![90 Degree angle verivication](images/gatas-Pulse/4.png){width=320}
+- ![Headers Soldered](images/gatas-Pulse/13.png){width=320}
+</div>
 
 ### 4.4: Inspect the Solder Joints
 
@@ -132,11 +133,12 @@ Once confirmed aligned, solder the rest of the pins.
 
 Use the small plastic with the 4 points as a support for the two terminal blocks.
 
-- Ensure that each solder joint is shiny and has a volcano-like shape.
+<div class="grid cards" markdown>
+- ![Terminal Blocks](images/gatas-Pulse/5.png){width=320}
+- ![Spacer for Blocks](images/gatas-Pulse/6.png){width=320}
+</div>
 
-|                                                         |                                                           |
-| ------------------------------------------------------- | --------------------------------------------------------- |
-| ![Terminal Blocks](images/gatas-Pulse/5.png){width=320} | ![Spacer for Blocks](images/gatas-Pulse/6.png){width=320} |
+Ensure that each solder joint is shiny and has a volcano-like shape.
 
 ---
 
@@ -150,11 +152,14 @@ Use the small plastic with the 4 points as a support for the two terminal blocks
 4. Carefully assemble the Pico + GPS + SX1262 (in that order) on top of each other. Each module clearly shows the direction of the USB connector. Ensure they are stacked correctly.
 5. Put the battery charger in place, but do not insert the battery yet.
 
-|                                                                                                                                   |                                                     |
-| --------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------- |
-| ![Assemble Step 1](images/gatas-Pulse/7.png){width=320}                                                                           | ![Assemble Step 2](images/gatas-Pulse/12.png){width=320}    |
-| ![Assemble Step 3](images/gatas-Pulse/8.png){width=320}<br/><sub>Ensure both GPS and LoRaWAN module switches are set to ON.</sub> | ![Assemble Step 4](images/gatas-Pulse/11.png){width=320}    |
-| ![Assemble Step 5](images/gatas-Pulse/10.png){width=320}                                                                          | ![Assemble Step 6](images/gatas-Pulse/9.png){width=320}    |
+<div class="grid cards" markdown>
+- ![Assemble Step 1](images/gatas-Pulse/7.png){width=320}
+- ![Assemble Step 2](images/gatas-Pulse/12.png){width=320}
+- ![Assemble Step 3](images/gatas-Pulse/8.png){width=320}<br/><sub>Ensure both GPS and LoRaWAN module switches are set to ON.</sub>
+- ![Assemble Step 4](images/gatas-Pulse/11.png){width=320}
+- ![Assemble Step 5](images/gatas-Pulse/10.png){width=320}
+- ![Assemble Step 6](images/gatas-Pulse/9.png){width=320}
+</div>
 
 ### Step 6.2: Schematic
 

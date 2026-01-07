@@ -1,12 +1,12 @@
 # GA/TAS Conspicuity Device
 
-> ⚠️ **Disclaimer: Use at Your Own Risk**
->
-> GA/TAS is provided "as is," without any warranties.  
-> By downloading or using this device, you acknowledge that you do so at your own risk.  
-> The creators are not liable for any damages or issues resulting from its use.  
-> GA/TAS is intended for General Aviation only and should not be relied upon as the sole source of traffic or navigation information.  
-> Users are responsible for ensuring compliance with local aviation regulations.
+!!! Disclaimer
+      **Use at Your Own Risk**      
+      GA/TAS is provided "as is," without any warranties.  
+      By downloading or using this device, you acknowledge that you do so at your own risk.  
+      The creators are not liable for any damages or issues resulting from its use.  
+      GA/TAS is intended for General Aviation only and should not be relied upon as the sole source of traffic or navigation information.  
+      Users are responsible for ensuring compliance with local aviation regulations.
 
 The GA/TAS Conspicuity device is designed for General Aviation pilots flying in areas where multiple protocols, such as OGN, Flarm, ADS-L, and FANET, are used. It can transmit and receive multiple protocols simultaneously (excluding sending ADS-B) using one or more transceiver modules. All received traffic is sent to your Electronic Flight Bag (EFB), such as SkyDemon, via the GLD90 protocol.
 
@@ -16,9 +16,11 @@ Powered by a Li-Ion battery, the device includes a PCB with a USB-C charger. The
 
 ### Pulse Version
 
-|                                                     |                                                 |
-|-----------------------------------------------------| ----------------------------------------------- |
-| ![Plane Pulse](images/gatas-Pulse/1.png){width=320} | ![Pulse materials](images/gatas-Pulse/2.png){width=320} |
+
+<div class="grid cards" markdown>
+- ![Plane Pulse](images/gatas-Pulse/1.png){width=320}
+- ![Pulse materials](images/gatas-Pulse/2.png){width=320}
+</div>
 
 [Build Instructions for GA/TAS Pulse](./gatas-Pulse.md)
 
@@ -26,9 +28,10 @@ Powered by a Li-Ion battery, the device includes a PCB with a USB-C charger. The
 
 ### Full Version
 
-|                                                    |                                               |
-| -------------------------------------------------- | --------------------------------------------- |
-| ![OpenScad View (Open)](images/gatas-plane.png){width=320} | ![KiCAD 3D Rendering](images/kicadpcb.jpg){width=320} |
+<div class="grid cards" markdown>
+- ![OpenScad View (Open)](images/gatas-plane.png){width=320}
+- ![kiCAD PCB View (Open)](images/kicadpcb.jpg){width=320}
+</div>
 
 The PCB measures approximately 8x9 cm.
 
@@ -62,13 +65,12 @@ Most libraries are used "as-is." Some of them have been slightly modified for pe
    [https://github.com/catchorg/Catch2](https://github.com/catchorg/Catch2)
 
 
-> ⚠️ **GA/TAS is an ongoing project** that is continuously being developed and improved.  
-> As a result, features, functionality, and performance may be updated or modified at any time without prior notice.  
-> We value feedback and collaboration!  
-> If you have any questions, suggestions, or concerns, feel free to reach out.  
-> Your input helps us improve the project and ensure it meets the needs of the community.
-
----
+!!! INFO
+      **GA/TAS is an ongoing project** that is continuously being developed and improved.  
+      As a result, features, functionality, and performance may be updated or modified at any time without prior notice.  
+      We value feedback and collaboration!  
+      If you have any questions, suggestions, or concerns, feel free to reach out.  
+      Your input helps us improve the project and ensure it meets the needs of the community.
 
 If you require further assistance or have specific questions about the GA/TAS PULSE firmware, soldering process, or case design, please refer to the project's GitHub repository or contact the maintainers directly.
 
