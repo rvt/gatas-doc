@@ -61,3 +61,9 @@
     In the below example, I als un a EFB on IP 192.168.178.191, and GA/TAS is more than happy to send GDL90 data to that IP.
     ![GDL Over UDP Configuration](images/FAQ/image.png)
     
+??? question "What are the big and small dots I am seeing at some of the protocols?"
+    The big and small dots help me to understand on what frequency GA/TAS did receive a package for that protocol.
+    The sending and reception of some radio protocols need to adhere to a specific timings and frequencies, logging and showing this allows us to validate if GA/TAS is working as expected.
+    Every big dot is a received package, every small dot means nothing was received yet.
+    ![Big and Small dots](images/FAQ/image-1.png)
+
